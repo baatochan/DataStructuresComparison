@@ -22,42 +22,31 @@ bool List::IsValueInList(int val) {
 }
 
 void List::addValue(int index, int value) {
-    /*int tempValue = rand();
-    ListElement * tempElement;
-    ListElement newElement(tempValue);
-    if(firstElement==NULL) firstElement=&newElement;
-    else {
-        tempElement = firstElement;
-        while (tempElement!=NULL) {
-            tempElement = tempElement->getNextElement();
-        }
-        tempElement->setNextElement(&newElement);*/
-    ListElement *tempElement;
+    ListElement newElement(value);
     if(index<0) {
         cout<<"Błędny indeks"<<endl;
         return;
     }
     else if(index>=size) {
-        ListElement newElement(value);
         if (firstElement == nullptr) firstElement = &newElement;
         else {
-            tempElement = firstElement;
-            while (tempElement != nullptr) {
-                tempElement = tempElement->getNextElement();
+            ListElement *lastElement;
+            lastElement = firstElement;
+            while (lastElement != nullptr) {
+                lastElement = lastElement->getNextElement();
             }
-            tempElement->setNextElement(&newElement);
+            lastElement->setNextElement(&newElement);
         }
     }
     else {
-        ListElement newElement(value);
-        ListElement *tempElementParent = firstElement;
-        tempElement = firstElement;
+        ListElement *elementAfterNew = firstElement;
+        ListElement *elementBeforeNew = firstElement;
         for (int i = 0; i < index; i++) {
-            tempElementParent = tempElement;
-            tempElement = tempElement->getNextElement();
+            elementBeforeNew = elementAfterNew;
+            elementAfterNew = elementAfterNew->getNextElement();
         }
-        tempElementParent->setNextElement(&newElement);
-        newElement.setNextElement(tempElement);
+        elementBeforeNew->setNextElement(&newElement);
+        newElement.setNextElement(elementAfterNew);
     }
     size++;
 }
