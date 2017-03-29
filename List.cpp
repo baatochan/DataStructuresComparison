@@ -67,16 +67,17 @@ void List::deleteValue(int index) {
 }
 
 void List::display() {
-    ListElement * temp = firstElement;
-    cout<<"Zawartość listy: "<<endl;
+    ListElement *temp = firstElement;
+    cout << "Zawartość listy: " << endl;
     /*while (temp->getNextElement()!=nullptr) {
         cout<<temp->getValue()<<" ";
         temp = temp->getNextElement();
     }*/
     for (int i = 0; i < size; i++) {
-        cout<<temp->getValue()<<" ";
+        cout << temp->getValue() << " ";
         temp = temp->getNextElement();
     }
+}
 
 void List::generateList(int size) {
     if(firstElement!=nullptr) {
