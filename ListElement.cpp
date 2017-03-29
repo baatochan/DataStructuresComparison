@@ -4,8 +4,13 @@
 #include <iostream>
 #include "ListElement.h"
 
+ListElement::ListElement() {
+    nextElement=nullptr;
+    value=0;
+}
+
 ListElement::ListElement(int value) {
-    nextElement=NULL;
+    nextElement=nullptr;
     this->value=value;
 }
 

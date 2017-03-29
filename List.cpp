@@ -9,7 +9,7 @@
 using namespace std;
 
 List::List() {
-    firstElement = NULL;
+    firstElement = nullptr;
     size = 0;
 }
 
@@ -32,11 +32,34 @@ void List::addValue(int index, int value) {
             tempElement = tempElement->getNextElement();
         }
         tempElement->setNextElement(&newElement);*/
+    ListElement *tempElement;
     if(index<0) {
         cout<<"Błędny indeks"<<endl;
         return;
     }
-
+    else if(index>=size) {
+        ListElement newElement(value);
+        if (firstElement == nullptr) firstElement = &newElement;
+        else {
+            tempElement = firstElement;
+            while (tempElement != nullptr) {
+                tempElement = tempElement->getNextElement();
+            }
+            tempElement->setNextElement(&newElement);
+        }
+    }
+    else {
+        ListElement newElement(value);
+        ListElement *tempElementParent = firstElement;
+        tempElement = firstElement;
+        for (int i = 0; i < index; i++) {
+            tempElementParent = tempElement;
+            tempElement = tempElement->getNextElement();
+        }
+        tempElementParent->setNextElement(&newElement);
+        newElement.setNextElement(tempElement);
+    }
+    size++;
 }
 
 void List::deleteValue(int index) {
@@ -46,14 +69,17 @@ void List::deleteValue(int index) {
 void List::display() {
     ListElement * temp = firstElement;
     cout<<"Zawartość listy: "<<endl;
-    while (temp->getNextElement()!=NULL) {
+    /*while (temp->getNextElement()!=nullptr) {
+        cout<<temp->getValue()<<" ";
+        temp = temp->getNextElement();
+    }*/
+    for (int i = 0; i < size; i++) {
         cout<<temp->getValue()<<" ";
         temp = temp->getNextElement();
     }
-}
 
 void List::generateList(int size) {
-    if(firstElement!=NULL) {
+    if(firstElement!=nullptr) {
         cout<<"Lista nie jest pusta! Usuń listę i spróbuj ponownie.";
         return;
     }

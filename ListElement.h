@@ -12,6 +12,7 @@ private:
     int value;
 public:
     ListElement(int value);
+    ListElement();
     int getValue();
     ListElement * getNextElement();
     void setValue(int value);

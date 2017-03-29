@@ -1,17 +1,16 @@
 //
 // Created by barto on 26.03.17.
 //
-#include <string>
 #include "ListElement.h"
+#include "Structure.h"
 
 #ifndef DATASTRUCTURESSDIZO_LIST_H
 #define DATASTRUCTURESSDIZO_LIST_H
 
-using namespace std;
-
-class List {
-private:
+class List : public Structure {
+public:
     ListElement *firstElement;
+private:
     int size;
 public:
     List();
@@ -27,7 +26,6 @@ public:
     void display();
 
     void generateList(int size);
-
 };
 
 
