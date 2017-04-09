@@ -15,17 +15,17 @@ private:
 public:
     List();
 
-    int loadFromFile(string FileName);
+    int loadFrom(string FileName);
 
-    bool IsValueInList(int val);
+    bool lookFor(int val);
 
-    void addValue(int index, int value);
+    void add(int index, int value);
 
-    void deleteValue(int index);
+    void remove(int index);
 
     void display();
 
-    void generateList(int size);
+    void generate(int size);
 };
 
 

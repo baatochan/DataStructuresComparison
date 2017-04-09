@@ -21,15 +21,21 @@ void Program::Start() {
 
         switch (option){
             case '1':
-                menu_table();
+                //myStructure = new Table();
+                //displayMenu("--- TABLICA ---");
+                //takeActionInMenu();
                 break;
 
             case '2':
-                menu_list();
+                myStructure = new List();
+                displayMenu("--- LISTA ---");
+                takeActionInMenu();
                 break;
 
             case '3':
-                menu_heap();
+                //myStructure = new Heap();
+                //displayMenu("--- KOPIEC ---");
+                //takeActionInMenu();
                 break;
         }
 
@@ -50,33 +56,29 @@ void Program::displayMenu(string info) {
     cout << "Podaj opcje:";
 }
 
-void Program::menu_table() {
 
-}
-
-void Program::menu_list() {
+void Program::takeActionInMenu() {
     char opt;
     string fileName;
     int index, value;
 
 
     do{
-        displayMenu("--- TABLICA ---");
         cin >> opt;
         cout << endl;
         switch (opt){
             case '1': //tutaj wczytytwanie  tablicy z pliku
                 cout << " Podaj nazwę zbioru:";
                 cin >> fileName;
-                myList.loadFromFile(fileName);
-                myList.display();
+                myStructure->loadFrom(fileName);
+                myStructure->display();
                 break;
 
             case '2': //tutaj usuwanie elemenu z tablicy
                 cout << " podaj index:";
                 cin >> index;
-                myList.deleteValue(index);
-                myList.display();
+                myStructure->remove(index);
+                myStructure->display();
                 break;
 
             case '3': //tutaj dodawanie elemetu do tablicy
@@ -85,14 +87,14 @@ void Program::menu_list() {
                 cout << " podaj waertość:";
                 cin >> value;
 
-                myList.addValue(index,value);
-                myList.display();
+                myStructure->add(index,value);
+                myStructure->display();
                 break;
 
             case '4': //tutaj znajdowanie elemetu w tablicy
                 cout << " podaj waertość:";
                 cin >> value;
-                if (myList.IsValueInList(value))
+                if (myStructure->lookFor(value))
                     cout << "poadana wartośc jest w tablicy";
                 else
                     cout << "poadanej wartości NIE ma w tablicy";
@@ -101,12 +103,12 @@ void Program::menu_list() {
             case '5':  //tutaj generowanie  tablicy
                 cout << "Podaj ilość elementów tablicy:";
                 cin >> value;
-                myList.generateList(value);
-                myList.display();
+                myStructure->generate(value);
+                myStructure->display();
                 break;
 
             case '6':  //tutaj wyświetlanie tablicy
-                myList.display();
+                myStructure->display();
                 break;
 
             case '7': //tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
@@ -117,6 +119,3 @@ void Program::menu_list() {
     } while (opt != '0');
 }
 
-void Program::menu_heap() {
-
-}

@@ -11,17 +11,17 @@ using namespace std;
 class Structure {
 public:
 
-    virtual int loadFromFile(string FileName)= 0;
+    virtual int loadFrom(string FileName)= 0;
 
-    virtual bool IsValueInList(int val)= 0;
+    virtual bool lookFor(int val)= 0;
 
-    virtual void addValue(int index, int value)= 0;
+    virtual void add(int index, int value)= 0;
 
-    virtual void deleteValue(int index)= 0;
+    virtual void remove(int index)= 0;
 
     virtual void display()= 0;
 
-    virtual void generateList(int size)= 0;
+    virtual void generate(int size)= 0;
 
 };
 

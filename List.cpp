@@ -13,29 +13,29 @@ List::List() {
     size = 0;
 }
 
-int List::loadFromFile(string FileName) {
+int List::loadFrom(string FileName) {
     return 0;
 }
 
-bool List::IsValueInList(int val) {
+bool List::lookFor(int val) {
     return false;
 }
 
-void List::addValue(int index, int value) {
-    ListElement newElement(value);
+/*void List::addValue(int index, int value) {
+    ListElement * newElement = new ListElement(value);
     if(index<0) {
         cout<<"Błędny indeks"<<endl;
         return;
     }
     else if(index>=size) {
-        if (firstElement == nullptr) firstElement = &newElement;
+        if (firstElement == nullptr) firstElement = newElement;
         else {
             ListElement *lastElement;
             lastElement = firstElement;
             while (lastElement != nullptr) {
                 lastElement = lastElement->getNextElement();
             }
-            lastElement->setNextElement(&newElement);
+            lastElement->setNextElement(newElement);
         }
     }
     else {
@@ -45,13 +45,41 @@ void List::addValue(int index, int value) {
             elementBeforeNew = elementAfterNew;
             elementAfterNew = elementAfterNew->getNextElement();
         }
-        elementBeforeNew->setNextElement(&newElement);
-        newElement.setNextElement(elementAfterNew);
+        elementBeforeNew->setNextElement(newElement);
+        newElement->setNextElement(elementAfterNew);
+    }
+    size++;
+}*/
+
+void List::add(int index, int value) {
+    ListElement * newElement = new ListElement(value);
+    if (index < 0) {
+        cout << "Błędny indeks" << endl;
+        return;
+    }
+    else if (index >= this->size) {
+        ListElement * lastElement = this->firstElement;
+        while (lastElement != nullptr) {
+            lastElement = lastElement->getNextElement();
+        }
+        lastElement->setNextElement(newElement);
+    }
+    else if (index == 0) {
+        newElement->setNextElement(this->firstElement);
+        this->firstElement = newElement;
+    }
+    else {
+        ListElement * elementBefore = this->firstElement;
+        for (int i = 1; i < index; i++) {
+            elementBefore = elementBefore->getNextElement();
+        }
+        newElement->setNextElement(elementBefore->getNextElement());
+        elementBefore->setNextElement(newElement);
     }
     size++;
 }
 
-void List::deleteValue(int index) {
+void List::remove(int index) {
 
 }
 
@@ -68,7 +96,7 @@ void List::display() {
     }
 }
 
-void List::generateList(int size) {
+void List::generate(int size) {
     if(firstElement!=nullptr) {
         cout<<"Lista nie jest pusta! Usuń listę i spróbuj ponownie.";
         return;
@@ -76,6 +104,6 @@ void List::generateList(int size) {
     this->size = size;
     for (int i = 0; i < size; i++) {
         int tempValue = rand();
-        addValue(i,tempValue);
+        add(i,tempValue);
     }
 }

@@ -11,14 +11,16 @@ using namespace std;
 
 class Program {
 private:
-    List myList;
+    Structure* myStructure;
 public:
     void Start();
 private:
     void displayMenu(string info);
-    void menu_table();
-    void menu_list();
-    void menu_heap();
+    //void menu_table();
+    //void menu_list();
+    //void menu_heap();
+    void takeActionInMenu();
+
 };
 
 
