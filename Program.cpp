@@ -14,6 +14,7 @@ void Program::Start() {
         cout << "1.Tablica" << endl;
         cout << "2.Lista" << endl;
         cout << "3.Kopiec" << endl;
+        cout << "4.BST" << endl;
         cout << "0.Wyjscie" << endl;
         cout << "Podaj opcje:";
         cin >> option;
@@ -21,21 +22,27 @@ void Program::Start() {
 
         switch (option){
             case '1':
-                //myStructure = new Table();
-                //displayMenu("--- TABLICA ---");
-                //takeActionInMenu();
+                _structure = new Array();
+                _isBST = false;
+                takeActionInMenu("--- TABLICA ---");
                 break;
 
             case '2':
-                myStructure = new List();
-                displayMenu("--- LISTA ---");
-                takeActionInMenu();
+                _structure = new List();
+                _isBST = false;
+                takeActionInMenu("--- LISTA ---");
                 break;
 
             case '3':
-                //myStructure = new Heap();
-                //displayMenu("--- KOPIEC ---");
-                //takeActionInMenu();
+                _structure = new Heap();
+                _isBST = false;
+                takeActionInMenu("--- KOPIEC ---");
+                break;
+
+            case '4':
+                _structure = new BSTree();
+                _isBST = true;
+                takeActionInMenu("--- BINARY SEARCH TREE ---");
                 break;
         }
 
@@ -45,77 +52,106 @@ void Program::Start() {
 void Program::displayMenu(string info) {
     cout << endl;
     cout << info << endl;
-    cout << "1.Wczytaj z pliku" << endl;
-    cout << "2.Usun" << endl;
-    cout << "3.Dodaj" << endl;
-    cout << "4.Znajdz" << endl;
-    cout << "5.Utworz losowo" << endl;
-    cout << "6.Wyswietl" << endl;
-    cout << "7.Test (pomiary)" << endl;
+    cout << "1.Dodaj" << endl;
+    cout << "2.Wczytaj z pliku" << endl;
+    cout << "3.Utworz losowo" << endl;
+    cout << "4.Usun wartosc" << endl;
+    cout << "5.Usun pozycje" << endl;
+    cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+    cout << "7.Znajdz" << endl;
+    cout << "8.Wyswietl" << endl;
+    cout << "9.Test (pomiary)" << endl;
     cout << "0.Powrot do menu" << endl;
     cout << "Podaj opcje:";
 }
 
-
-void Program::takeActionInMenu() {
+void Program::takeActionInMenu(string info) {
     char opt;
     string fileName;
     int index, value;
 
 
     do{
+        displayMenu(info);
         cin >> opt;
         cout << endl;
         switch (opt){
-            case '1': //tutaj wczytytwanie  tablicy z pliku
-                cout << " Podaj nazwę zbioru:";
+            case '1': //cout << "1.Dodaj" << endl;
+                if(!_isBST){
+                    cout << "podaj index:";
+                    cin >> index;
+                }
+                else _isBST = 0;
+                cout << "podaj wartość:";
+                cin >> value;
+
+                _structure->add(value,index);
+                cout<<_structure->print()<<endl;
+                break;
+
+            case '2': //cout << "2.Wczytaj z pliku" << endl;
+                cout << " Podaj nazwę pliku:";
                 cin >> fileName;
-                myStructure->loadFrom(fileName);
-                myStructure->display();
+                _structure->loadFrom(fileName);
+                cout<<_structure->print()<<endl;
                 break;
 
-            case '2': //tutaj usuwanie elemenu z tablicy
-                cout << " podaj index:";
-                cin >> index;
-                myStructure->remove(index);
-                myStructure->display();
+            case '3':  //cout << "3.Utworz losowo" << endl;
+                cout << "Podaj ilość elementów tablicy:";
+                cin >> value;
+                _structure->generate(value);
+                cout<<_structure->print()<<endl;
                 break;
 
-            case '3': //tutaj dodawanie elemetu do tablicy
-                cout << " podaj index:";
-                cin >> index;
+            case '4': //cout << "4.Usun wartosc" << endl;
+                cout << "podaj wartosc:";
+                cin >> value;
+                _structure->remove(value);
+                cout<<_structure->print()<<endl;
+                break;
+
+            case '5': //cout << "5.Usun pozycje" << endl;
+                if(!_isBST){
+                    cout << "podaj index:";
+                    cin >> index;
+                    _structure->removePosition(index);
+                    cout<<_structure->print()<<endl;
+                }
+                else cout<<"Nie dotyczy drzew BST."<<endl;
+                break;
+
+            case '6': //cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+                if(!_isBST){
+                    cout << "podaj index:";
+                    cin >> index;
+                    cout << "podaj wartosc:";
+                    cin >> value;
+                    _structure->remove(index,value);
+                    cout<<_structure->print()<<endl;
+                }
+                else cout<<"Nie dotyczy drzew BST."<<endl;
+                break;
+
+            case '7': //cout << "7.Znajdz" << endl;
                 cout << " podaj waertość:";
                 cin >> value;
-
-                myStructure->add(index,value);
-                myStructure->display();
-                break;
-
-            case '4': //tutaj znajdowanie elemetu w tablicy
-                cout << " podaj waertość:";
-                cin >> value;
-                if (myStructure->lookFor(value))
+                if (_structure->lookFor(value))
                     cout << "poadana wartośc jest w tablicy";
                 else
                     cout << "poadanej wartości NIE ma w tablicy";
                 break;
 
-            case '5':  //tutaj generowanie  tablicy
-                cout << "Podaj ilość elementów tablicy:";
-                cin >> value;
-                myStructure->generate(value);
-                myStructure->display();
+            case '8':  //cout << "8.Wyswietl" << endl;
+                cout<<_structure->print()<<endl;
                 break;
 
-            case '6':  //tutaj wyświetlanie tablicy
-                myStructure->display();
-                break;
-
-            case '7': //tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+            case '9': //tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
                 // można sobie tu dodać własne case'y
                 break;
         }
 
     } while (opt != '0');
+
+    delete _structure;
 }
 

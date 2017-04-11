@@ -15,11 +15,15 @@ public:
 
     virtual bool lookFor(int val)= 0;
 
-    virtual void add(int index, int value)= 0;
+    virtual void add(int value, int index)= 0;
 
-    virtual void remove(int index)= 0;
+    virtual void remove(int value)= 0;
 
-    virtual void display()= 0;
+    virtual void remove(int index, int value)= 0;
+
+    virtual void removePosition(int index)= 0;
+
+    virtual string print()= 0;
 
     virtual void generate(int size)= 0;
 
