@@ -2,21 +2,19 @@
 // Created by barto on 11.04.17.
 //
 
-#ifndef DATASTRUCTURESSDIZO_ARRAY_H
-#define DATASTRUCTURESSDIZO_ARRAY_H
+#ifndef DATASTRUCTURESSDIZO_LIST_H
+#define DATASTRUCTURESSDIZO_LIST_H
 
 
 #include "Structure.h"
 
-class Array : public Structure {
+class List : public Structure {
 private:
 
-    int* _array;
-
 public:
-    Array();
+    List();
 
-    ~Array();
+    ~List();
 
     void loadDataFrom(std::string fileName) override ;
 
@@ -33,8 +31,7 @@ public:
     std::string print() override ;
 
     void generate(int size) override ;
-
 };
 
 
-#endif //DATASTRUCTURESSDIZO_ARRAY_H
+#endif //DATASTRUCTURESSDIZO_LIST_H

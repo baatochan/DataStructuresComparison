@@ -92,6 +92,7 @@ void Array::remove(int value) {
     for (int i = 0; i < size; i++) {
         if(_array[i] == value) {
             removePosition(i);
+            i--;
         }
     }
 }

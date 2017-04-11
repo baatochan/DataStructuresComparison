@@ -1,15 +1,17 @@
 //
 // Created by barto on 29.03.17.
 //
+
+#ifndef DATASTRUCTURESSDIZO_STRUCTURE_H
+#define DATASTRUCTURESSDIZO_STRUCTURE_H
+
+
 #include <string>
 #include <vector>
 #include <fstream>
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-
-#ifndef DATASTRUCTURESSDIZO_STRUCTURE_H
-#define DATASTRUCTURESSDIZO_STRUCTURE_H
 
 using namespace std;
 
