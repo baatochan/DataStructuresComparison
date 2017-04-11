@@ -11,6 +11,8 @@
 class List : public Structure {
 private:
 
+    class _listElement;
+
 public:
     List();
 

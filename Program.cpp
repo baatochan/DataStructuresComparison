@@ -29,7 +29,7 @@ void Program::start() {
                 break;
 
             case '2':
-                //_structure = new List();
+                _structure = new List();
                 _isBST = false;
                 takeActionInMenu("--- LISTA ---");
                 break;

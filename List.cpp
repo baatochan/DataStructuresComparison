@@ -4,6 +4,27 @@
 
 #include "List.h"
 
+// private
+
+class List::_listElement {
+public:
+
+    _listElement * PreviousElement;
+    _listElement * NextElement;
+
+    int Value;
+
+public:
+
+    _listElement(int value) {
+        PreviousElement = nullptr;
+        NextElement = nullptr;
+
+        Value = value;
+    }
+
+};
+
 // public
 
 List::List() {
