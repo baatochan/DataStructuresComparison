@@ -2,6 +2,7 @@
 
 int main() {
     Program program;
-    program.Start();
+    program.start();
+
     return 0;
 }

@@ -9,13 +9,21 @@
 
 class Program {
 private:
+
     Structure* _structure;
+
     bool _isBST = false;
+
 public:
-    void Start();
+
+    void start();
+
 private:
+
     void displayMenu(std::string info);
+
     void takeActionInMenu(std::string info);
+
 };
 
 

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void Program::Start() {
+void Program::start() {
     char option;
     do{
         cout << endl;
