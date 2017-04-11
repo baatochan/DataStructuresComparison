@@ -6,12 +6,10 @@
 #ifndef DATASTRUCTURESSDIZO_STRUCTURE_H
 #define DATASTRUCTURESSDIZO_STRUCTURE_H
 
-using namespace std;
-
 class Structure {
 public:
 
-    virtual int loadFrom(string FileName)= 0;
+    virtual int loadFrom(std::string FileName)= 0;
 
     virtual bool lookFor(int val)= 0;
 
@@ -23,7 +21,7 @@ public:
 
     virtual void removePosition(int index)= 0;
 
-    virtual string print()= 0;
+    virtual std::string print()= 0;
 
     virtual void generate(int size)= 0;
 

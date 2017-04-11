@@ -163,4 +163,3 @@ void Program::takeActionInMenu(string info) {
 
     delete _structure;
 }
-
