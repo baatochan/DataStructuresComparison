@@ -3,6 +3,7 @@
 //
 
 #include "Structure.h"
+#include "Array.h"
 
 #ifndef DATASTRUCTURESSDIZO_PROGRAM_H
 #define DATASTRUCTURESSDIZO_PROGRAM_H

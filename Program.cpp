@@ -22,7 +22,7 @@ void Program::start() {
 
         switch (option){
             case '1':
-                //_structure = new Array();
+                _structure = new Array();
                 _isBST = false;
                 takeActionInMenu("--- TABLICA ---");
                 break;
@@ -43,6 +43,9 @@ void Program::start() {
                 //_structure = new BSTree();
                 _isBST = true;
                 takeActionInMenu("--- BINARY SEARCH TREE ---");
+                break;
+
+            case '0':
                 break;
 
             default:
@@ -97,7 +100,7 @@ void Program::takeActionInMenu(string info) {
             case '2': //cout << "2.Wczytaj z pliku" << endl;
                 cout << " Podaj nazwę pliku:";
                 cin >> fileName;
-                _structure->loadFrom(fileName);
+                _structure->loadDataFrom(fileName);
                 cout<<_structure->print()<<endl;
                 break;
 
@@ -152,6 +155,9 @@ void Program::takeActionInMenu(string info) {
 
             case '9': //cout << "9.Test (pomiary)" << endl;
                 // można sobie tu dodać własne case'y
+                break;
+
+            case '0':
                 break;
 
             default:

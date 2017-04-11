@@ -2,16 +2,27 @@
 // Created by barto on 29.03.17.
 //
 #include <string>
+#include <vector>
+#include <fstream>
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
 
 #ifndef DATASTRUCTURESSDIZO_STRUCTURE_H
 #define DATASTRUCTURESSDIZO_STRUCTURE_H
 
+using namespace std;
+
 class Structure {
+protected:
+
+    int size;
+
 public:
 
-    virtual int loadFrom(std::string FileName)= 0;
+    virtual void loadDataFrom(string fileName)= 0;
 
-    virtual bool lookFor(int val)= 0;
+    virtual bool lookFor(int value)= 0;
 
     virtual void add(int value, int index)= 0;
 
@@ -21,9 +32,13 @@ public:
 
     virtual void removePosition(int index)= 0;
 
-    virtual std::string print()= 0;
+    virtual string print()= 0;
 
     virtual void generate(int size)= 0;
+
+protected:
+
+    vector<int> loadRawDataFrom(string path);
 
 };
 
