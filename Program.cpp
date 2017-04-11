@@ -22,27 +22,31 @@ void Program::Start() {
 
         switch (option){
             case '1':
-                _structure = new Array();
+                //_structure = new Array();
                 _isBST = false;
                 takeActionInMenu("--- TABLICA ---");
                 break;
 
             case '2':
-                _structure = new List();
+                //_structure = new List();
                 _isBST = false;
                 takeActionInMenu("--- LISTA ---");
                 break;
 
             case '3':
-                _structure = new Heap();
+                //_structure = new Heap();
                 _isBST = false;
                 takeActionInMenu("--- KOPIEC ---");
                 break;
 
             case '4':
-                _structure = new BSTree();
+                //_structure = new BSTree();
                 _isBST = true;
                 takeActionInMenu("--- BINARY SEARCH TREE ---");
+                break;
+
+            default:
+                cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
                 break;
         }
 
@@ -66,9 +70,10 @@ void Program::displayMenu(string info) {
 }
 
 void Program::takeActionInMenu(string info) {
-    char opt;
-    string fileName;
-    int index, value;
+    char opt = 0;
+    string fileName = "";
+    int index = 0;
+    int value = 0;
 
 
     do{
@@ -145,8 +150,12 @@ void Program::takeActionInMenu(string info) {
                 cout<<_structure->print()<<endl;
                 break;
 
-            case '9': //tutaj nasza funkcja do eksperymentów (pomiary czasów i generowanie daneych) - nie będzie testowana przez prowadzącego
+            case '9': //cout << "9.Test (pomiary)" << endl;
                 // można sobie tu dodać własne case'y
+                break;
+
+            default:
+                cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
                 break;
         }
 
