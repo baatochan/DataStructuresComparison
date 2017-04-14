@@ -13,7 +13,11 @@ private:
 
     class _listElement;
 
+    _listElement* _firstElement;
+    _listElement* _lastElement;
+
 public:
+
     List();
 
     ~List();
@@ -33,6 +37,13 @@ public:
     std::string print() override ;
 
     void generate(int size) override ;
+
+private:
+
+    void addAtTheBeggining(int value);
+
+    void addAtTheEnd(int value);
+
 };
 
 

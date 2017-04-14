@@ -106,7 +106,7 @@ void Program::takeActionInMenu(string info) {
                 break;
 
             case '3':  //cout << "3.Utworz losowo" << endl;
-                cout << "Podaj ilość elementów tablicy:";
+                cout << "Podaj ilość elementów:";
                 cin >> value;
                 _structure->generate(value);
                 cout<<_structure->print()<<endl;
@@ -145,9 +145,9 @@ void Program::takeActionInMenu(string info) {
                 cout << " podaj waertość:";
                 cin >> value;
                 if (_structure->lookFor(value))
-                    cout << "poadana wartośc jest w tablicy";
+                    cout << "poadana wartośc jest w strukturze";
                 else
-                    cout << "poadanej wartości NIE ma w tablicy";
+                    cout << "poadanej wartości NIE ma w strukturze";
                 break;
 
             case '8':  //cout << "8.Wyswietl" << endl;
