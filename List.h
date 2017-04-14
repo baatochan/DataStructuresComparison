@@ -44,6 +44,10 @@ private:
 
     void addAtTheEnd(int value);
 
+    void removeFirst();
+
+    void removeLast();
+
 };
 
 
