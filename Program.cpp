@@ -33,13 +33,13 @@ void Program::start() {
                 break;
 
             case '3':
-                //_structure = new Heap();
+                _structure = new Heap();
                 _isBST = false;
                 takeActionInMenu("--- KOPIEC ---");
                 break;
 
             case '4':
-                //_structure = new BSTree();
+                _structure = new BSTree();
                 _isBST = true;
                 takeActionInMenu("--- BINARY SEARCH TREE ---");
                 break;

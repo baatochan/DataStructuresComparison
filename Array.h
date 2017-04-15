@@ -9,7 +9,7 @@
 #include "Structure.h"
 
 class Array : public Structure {
-private:
+protected:
 
     int* _array;
 
@@ -18,7 +18,7 @@ public:
 
     ~Array();
 
-    void loadDataFrom(std::string fileName) override ;
+    void loadDataFrom(string fileName) override ;
 
     bool lookFor(int value) override ;
 
@@ -30,7 +30,7 @@ public:
 
     void removePosition(int index) override ;
 
-    std::string print() override ;
+    string print() override ;
 
     void generate(int size) override ;
 

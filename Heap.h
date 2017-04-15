@@ -9,7 +9,30 @@
 #include "Array.h"
 
 class Heap : public Array {
+private:
 
+
+
+public:
+    Heap();
+
+    ~Heap();
+
+    void loadDataFrom(string fileName) override ;
+
+    bool lookFor(int value) override ;
+
+    void add(int value, int index) override ;
+
+    void remove(int value) override ;
+
+    void remove(int index, int value) override ;
+
+    void removePosition(int index) override ;
+
+    string print() override ;
+
+    void generate(int size) override ;
 };
 
 
