@@ -88,7 +88,7 @@ void BSTree::remove(int value) {
     }
 
     if(current == nullptr) {
-        std::cout << "Value not found! " << std::endl;
+        cout << "Value not found! " << endl;
         return;
     }
 

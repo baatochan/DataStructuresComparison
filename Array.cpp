@@ -126,7 +126,7 @@ void Array::removePosition(int index) {
 
 }
 
-std::string Array::print() {
+string Array::print() {
     string temp = "";
 
     for (int i = 0; i < size; i++) {
