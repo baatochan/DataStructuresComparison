@@ -16,7 +16,7 @@ Array::~Array() {
 }
 
 void Array::loadDataFrom(string fileName) {
-    std::vector<int> data = loadRawDataFrom(fileName);
+    vector<int> data = loadRawDataFrom(fileName);
 
     for (int i = 0; i < data.size(); i++) {
         add(data[i],size);

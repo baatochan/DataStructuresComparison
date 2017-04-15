@@ -2,10 +2,8 @@
 // Created by barto on 26.03.17.
 //
 
-#include <iostream>
-#include "Program.h"
 
-using namespace std;
+#include "Program.h"
 
 void Program::start() {
     char option;

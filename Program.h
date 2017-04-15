@@ -8,6 +8,8 @@
 
 #include "Array.h"
 #include "List.h"
+#include "Heap.h"
+#include "BSTree.h"
 
 class Program {
 private:
@@ -22,9 +24,9 @@ public:
 
 private:
 
-    void displayMenu(std::string info);
+    void displayMenu(string info);
 
-    void takeActionInMenu(std::string info);
+    void takeActionInMenu(string info);
 
 };
 

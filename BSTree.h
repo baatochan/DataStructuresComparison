@@ -23,7 +23,7 @@ public:
 
     ~BSTree();
 
-    void loadDataFrom(std::string fileName) override ;
+    void loadDataFrom(string fileName) override ;
 
     bool lookFor(int value) override ;
 
@@ -35,13 +35,19 @@ public:
 
     void removePosition(int index) override ;
 
-    std::string print() override ;
+    string print() override ;
 
     void generate(int size) override ;
 
 private:
 
-    
+    void add(int value, _node *&node);
+
+    string print(_node * node);
+
+    int getHeight(_node * node);
+
+    void remove(_node * node);
 
 };
 

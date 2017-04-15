@@ -47,8 +47,8 @@ List::~List() {
     }
 }
 
-void List::loadDataFrom(std::string fileName) {
-    std::vector<int> data = loadRawDataFrom(fileName);
+void List::loadDataFrom(string fileName) {
+    vector<int> data = loadRawDataFrom(fileName);
 
     for (int i = 0; i < data.size(); i++) {
         add(data[i],size);
@@ -245,7 +245,7 @@ void List::removePosition(int index) {
     }
 }
 
-std::string List::print() {
+string List::print() {
     string temp = "";
     _listElement * currentElement = _firstElement;
     bool isEmpty = true;

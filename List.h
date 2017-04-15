@@ -22,7 +22,7 @@ public:
 
     ~List();
 
-    void loadDataFrom(std::string fileName) override ;
+    void loadDataFrom(string fileName) override ;
 
     bool lookFor(int value) override ;
 
@@ -34,7 +34,7 @@ public:
 
     void removePosition(int index) override ;
 
-    std::string print() override ;
+    string print() override ;
 
     void generate(int size) override ;
 
