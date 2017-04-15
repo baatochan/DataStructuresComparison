@@ -9,19 +9,11 @@
 #include "Array.h"
 
 class Heap : public Array {
-private:
-
-
-
 public:
 
     Heap();
 
-    ~Heap();
-
     void loadDataFrom(string fileName) override ;
-
-    bool lookFor(int value) override ;
 
     void add(int value, int index) override ;
 
@@ -34,6 +26,24 @@ public:
     string print() override ;
 
     void generate(int size) override ;
+
+private:
+
+    void heapifyEverything(); //restore heap rule in whole structure
+
+    void heapifyWayUp(int index); //restore heap rule for element and every parent to the root
+
+    void heapify(int index); //restore heap rule for this child (checks if the value under the provided index is smaller than parent)
+
+    int getParent(int index);
+
+    int getLeftChild(int index);
+
+    int getRightChild(int index);
+
+    int getLevel(int index);
+
+    int getHeight(int index);
 
 };
 
