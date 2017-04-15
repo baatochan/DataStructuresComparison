@@ -14,9 +14,16 @@ void Heap::loadDataFrom(string fileName) {
 }
 
 void Heap::add(int value, int index) {
-    if(index>size) index = size;
-    Array::add(value, index);
-    heapifyWayUp(index);
+    if(index >= size){
+        index = size;
+        Array::add(value, index);
+        heapifyWayUp(index);
+    }
+    else {
+        Array::add(value, index);
+        heapifyEverything();
+    }
+
 }
 
 void Heap::remove(int value) {

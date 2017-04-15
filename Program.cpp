@@ -154,7 +154,7 @@ void Program::takeActionInMenu(string info) {
 
             case '9': //cout << "9.Test (pomiary)" << endl;
                 // można sobie tu dodać własne case'y
-                ((Heap*)_structure)->test();
+                //((Heap*)_structure)->test();
                 break;
 
             case '0':
