@@ -4,6 +4,8 @@
 
 #include "Structure.h"
 
+// protected
+
 vector<int> Structure::loadRawDataFrom(string path) {
     vector<int> returnIntVector = vector<int>();
     vector<string> values = vector<string>();

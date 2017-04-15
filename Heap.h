@@ -14,6 +14,7 @@ private:
 
 
 public:
+
     Heap();
 
     ~Heap();
@@ -33,6 +34,7 @@ public:
     string print() override ;
 
     void generate(int size) override ;
+
 };
 
 
