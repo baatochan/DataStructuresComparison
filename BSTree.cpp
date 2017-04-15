@@ -95,37 +95,57 @@ void BSTree::remove(int value) {
     // removing node with no child
 
     if(current->Left == nullptr && current->Right == nullptr) {
-        if(parent->Left == current)
-            parent->Left = nullptr;
-        else
-            parent->Right = nullptr;
+        if(current == _root){
+            _root = nullptr;
+            delete current;
+            return;
+        }
+        else {
+            if(parent->Left == current)
+                parent->Left = nullptr;
+            else
+                parent->Right = nullptr;
 
-        delete current;
-        return;
+            delete current;
+            return;
+        }
     }
 
     // removing node with one child - left
 
     if(current->Left == nullptr && current->Right != nullptr) {
-        if(parent->Left == current) {
-            parent->Left = current->Right;
-        } else {
-            parent->Right = current->Right;
+        if (current == _root) {
+            _root = current->Left;
+            delete current;
+            return;
         }
-        delete current;
-        return;
+        else {
+            if (parent->Left == current) {
+                parent->Left = current->Right;
+            } else {
+                parent->Right = current->Right;
+            }
+            delete current;
+            return;
+        }
     }
 
     // removing node with one child - right
 
     if(current->Left != nullptr && current->Right == nullptr) {
-        if(parent->Left == current) {
-            parent->Left = current->Left;
-        } else {
-            parent->Right = current->Left;
+        if (current == _root) {
+            _root = current->Right;
+            delete current;
         }
-        delete current;
-        return;
+        else {
+            if (parent->Left == current) {
+                parent->Left = current->Left;
+            } else {
+                parent->Right = current->Left;
+            }
+            delete current;
+            return;
+        }
     }
 
     // removing node with two children
