@@ -27,6 +27,8 @@ public:
 
     void generate(int size) override ;
 
+    void test();
+
 private:
 
     void heapifyEverything(); //restore heap rule in whole structure
