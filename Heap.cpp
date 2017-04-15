@@ -74,7 +74,11 @@ int Heap::getParent(int index) {
 int Heap::getLevel(int index) {
     int level = 0;
     int tmp = 1;
-    while (tmp < index) {
+    if (index == 0)
+        return 0;
+    if(index == 1)
+        return 1;
+    while (tmp <= index) {
         tmp *= 2;
         level++;
     }
