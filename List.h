@@ -40,7 +40,7 @@ public:
 
 private:
 
-    void addAtTheBeggining(int value);
+    void addAtTheBeginning(int value);
 
     void addAtTheEnd(int value);
 

@@ -77,7 +77,7 @@ void List::add(int value, int index) {
         return;
     }
     else if (index == 0) {
-        addAtTheBeggining(value);
+        addAtTheBeginning(value);
         return;
     }
     else if (index > 0 && index < halfOfSize) {
@@ -272,7 +272,7 @@ void List::generate(int size) {
 
 // private
 
-void List::addAtTheBeggining(int value) {
+void List::addAtTheBeginning(int value) {
     _listElement * newElement = new _listElement(value);
     if(size == 0) {
         _firstElement = newElement;
