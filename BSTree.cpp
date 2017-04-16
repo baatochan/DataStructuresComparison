@@ -66,7 +66,7 @@ bool BSTree::lookFor(int value) {
 
 void BSTree::add(int value, int index) {
     add(value, _root);
-    cout<<print()<<endl;
+    //cout<<print()<<endl;
     DSW();
 }
 
