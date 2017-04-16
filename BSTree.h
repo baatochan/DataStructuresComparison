@@ -49,6 +49,17 @@ private:
 
     void remove(_node * node);
 
+    void DSW();
+
+    void Listify();
+
+    _node* rotateRight(_node* grandParent, _node* parent, _node* leftChild);
+
+    void recreateBST();
+
+    void makeRotations(int bound);
+
+    void rotateLeft(_node* grandParent, _node* parent, _node* rightChild);
 };
 
 

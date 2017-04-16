@@ -260,3 +260,82 @@ void BSTree::remove(BSTree::_node *node) {
     else
         return;
 }
+
+void BSTree::DSW() {
+    if(_root != nullptr) {
+        Listify();
+        recreateBST();
+    }
+}
+
+void BSTree::Listify() {
+    _node* grandParent = nullptr;
+    _node* parent = _root;
+    _node* leftChild;
+
+    while (parent != nullptr) {
+        leftChild = parent->Left;
+        if(leftChild != nullptr) {
+            grandParent = rotateRight(grandParent, parent, leftChild);
+            parent = leftChild;
+        }
+        else {
+            grandParent = parent;
+            parent = parent->Right;
+        }
+    }
+}
+
+BSTree::_node *BSTree::rotateRight(BSTree::_node *grandParent, BSTree::_node *parent, BSTree::_node *leftChild) {
+    if(grandParent != nullptr) {
+        grandParent->Right = leftChild;
+    }
+    else {
+        _root = leftChild;
+    }
+    parent->Left = leftChild->Right;
+    leftChild->Right = parent;
+    return grandParent;
+}
+
+void BSTree::recreateBST() {
+    int numberOfElements = 0;
+    for (_node* tmp = _root; tmp != nullptr; tmp = tmp->Right) {
+        numberOfElements++;
+    }
+
+    int m = ((int)pow(2,floor(log2(numberOfElements + 1)))-1); //m = 2^[podloga[ln(iloscEl+1)]]-1
+
+    makeRotations(numberOfElements - m);
+
+    while (m > 1) {
+        makeRotations(m /= 2);
+    }
+}
+
+void BSTree::makeRotations(int bound) {
+    _node* grandParent = nullptr;
+    _node* parent = _root;
+    _node* child = _root->Right;
+
+    for (bound; bound > 0; bound--) {
+        if(child != nullptr) {
+            rotateLeft(grandParent, parent, child);
+            grandParent = child;
+            parent = grandParent->Right;
+            child = parent->Right;
+        }
+    }
+}
+
+void BSTree::rotateLeft(BSTree::_node *grandParent, BSTree::_node *parent, BSTree::_node *rightChild) {
+    if (grandParent != nullptr) {
+        grandParent->Right = rightChild;
+    }
+    else {
+        _root = rightChild;
+    }
+
+    parent->Right = rightChild->Left;
+    rightChild->Left = parent;
+}
