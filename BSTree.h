@@ -43,6 +43,8 @@ private:
 
     void add(int value, _node *&node);
 
+    void removeValue(int value);
+
     string print(_node * node);
 
     int getHeight(_node * node);

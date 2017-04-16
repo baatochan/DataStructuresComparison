@@ -88,7 +88,8 @@ void Program::takeActionInMenu(string info) {
                     cout << "podaj index:";
                     cin >> index;
                 }
-                else _isBST = 0;
+                else
+                    index = 0;
                 cout << "podaj wartość:";
                 cin >> value;
 
@@ -124,7 +125,8 @@ void Program::takeActionInMenu(string info) {
                     _structure->removePosition(index);
                     cout<<_structure->print()<<endl;
                 }
-                else cout<<"Nie dotyczy drzew BST."<<endl;
+                else
+                    cout<<"Nie dotyczy drzew BST."<<endl;
                 break;
 
             case '6': //cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
@@ -136,7 +138,8 @@ void Program::takeActionInMenu(string info) {
                     _structure->remove(index,value);
                     cout<<_structure->print()<<endl;
                 }
-                else cout<<"Nie dotyczy drzew BST."<<endl;
+                else
+                    cout<<"Nie dotyczy drzew BST."<<endl;
                 break;
 
             case '7': //cout << "7.Znajdz" << endl;
@@ -154,7 +157,6 @@ void Program::takeActionInMenu(string info) {
 
             case '9': //cout << "9.Test (pomiary)" << endl;
                 // można sobie tu dodać własne case'y
-                //((Heap*)_structure)->test();
                 break;
 
             case '0':

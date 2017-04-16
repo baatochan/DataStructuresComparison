@@ -66,9 +66,51 @@ bool BSTree::lookFor(int value) {
 
 void BSTree::add(int value, int index) {
     add(value, _root);
+    cout<<print()<<endl;
+    DSW();
 }
 
 void BSTree::remove(int value) {
+    removeValue(value);
+    DSW();
+}
+
+void BSTree::remove(int index, int value) {} //nie dotyczy BST
+
+void BSTree::removePosition(int index) {} //nie dotyczy BST
+
+string BSTree::print() {
+    string s = "BST: \n";
+    _height = getHeight(_root);
+    s += print(_root);
+    return s;
+}
+
+void BSTree::generate(int size) {
+    srand(time(NULL));
+
+    for (int i = 0; i < size; i++) {
+        add((rand()-(RAND_MAX/2)));
+    }
+}
+
+// private
+
+void BSTree::add(int value, BSTree::_node *&node) {
+    if (node == nullptr) {
+        node = new _node(value);
+    }
+    else {
+        if (value < node->Value) {
+            add(value, node->Left);
+        }
+        else {
+            add(value, node->Right);
+        }
+    }
+}
+
+void BSTree::removeValue(int value) {
     _node * parent;
     _node * current = _root;
 
@@ -185,41 +227,6 @@ void BSTree::remove(int value) {
     }
 }
 
-void BSTree::remove(int index, int value) {} //nie dotyczy BST
-
-void BSTree::removePosition(int index) {} //nie dotyczy BST
-
-string BSTree::print() {
-    string s = "BST: \n";
-    _height = getHeight(_root);
-    s += print(_root);
-    return s;
-}
-
-void BSTree::generate(int size) {
-    srand(time(NULL));
-
-    for (int i = 0; i < size; i++) {
-        add((rand()-(RAND_MAX/2)));
-    }
-}
-
-// private
-
-void BSTree::add(int value, BSTree::_node *&node) {
-    if (node == nullptr) {
-        node = new _node(value);
-    }
-    else {
-        if (value < node->Value) {
-            add(value, node->Left);
-        }
-        else {
-            add(value, node->Right);
-        }
-    }
-}
-
 string BSTree::print(BSTree::_node *node) {
     if (node != nullptr) {
         string tmp = "";
@@ -323,7 +330,12 @@ void BSTree::makeRotations(int bound) {
             rotateLeft(grandParent, parent, child);
             grandParent = child;
             parent = grandParent->Right;
-            child = parent->Right;
+            if(parent != nullptr){
+                child = parent->Right;
+            }
+            else {
+                child = nullptr;
+            }
         }
     }
 }

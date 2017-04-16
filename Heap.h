@@ -27,8 +27,6 @@ public:
 
     void generate(int size) override ;
 
-    void test();
-
 private:
 
     void heapifyEverything(); //restore heap rule in whole structure
@@ -39,13 +37,7 @@ private:
 
     int getParent(int index);
 
-    int getLeftChild(int index);
-
-    int getRightChild(int index);
-
     int getLevel(int index);
-
-    int getHeight(int index);
 
 };
 

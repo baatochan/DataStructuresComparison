@@ -94,12 +94,3 @@ int Heap::getLevel(int index) {
     }
     return level;
 }
-
-void Heap::test() {
-    cout<<"X"<<endl;
-    for (int i = 0; i < 100; i++) {
-        cout<<i<<": "<<getParent(i)<<endl;
-    }
-}
-
-
