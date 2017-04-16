@@ -61,7 +61,6 @@ void Heap::heapifyEverything() {
 void Heap::heapifyWayUp(int index) {
     int level = getLevel(index);
     for (int i = 0; i < level; i++) {
-        cout<<print()<<endl;
         heapify(index);
         index = getParent(index);
     }
@@ -83,10 +82,6 @@ int Heap::getParent(int index) {
 int Heap::getLevel(int index) {
     int level = 0;
     int tmp = 0;
-    /*if (index == 0)
-        return 0;
-    if(index == 1)
-        return 1;*/
     while (tmp < index) {
         level++;
         tmp = (int)pow(2,level+1);
