@@ -39,6 +39,8 @@ public:
 
     virtual void generate(int size)= 0;
 
+    virtual void test() = 0;
+
 protected:
 
     vector<int> loadRawDataFrom(string path);

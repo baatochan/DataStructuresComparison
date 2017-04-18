@@ -351,3 +351,7 @@ void BSTree::rotateLeft(BSTree::_node *grandParent, BSTree::_node *parent, BSTre
     parent->Right = rightChild->Left;
     rightChild->Left = parent;
 }
+
+void BSTree::test() {
+
+}

@@ -342,3 +342,7 @@ void List::removeLast() {
         cout<<"WUT WUT?!"<<endl;
     }
 }
+
+void List::test() {
+
+}

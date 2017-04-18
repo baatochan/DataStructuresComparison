@@ -38,6 +38,8 @@ public:
 
     void generate(int size) override ;
 
+    void test() override ;
+
 private:
 
     void addAtTheBeginning(int value);

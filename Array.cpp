@@ -146,3 +146,7 @@ void Array::generate(int size) {
         add((rand()-(RAND_MAX/2)),this->size);
     }
 }
+
+void Array::test() {
+
+}

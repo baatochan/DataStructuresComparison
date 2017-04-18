@@ -39,6 +39,8 @@ public:
 
     void generate(int size) override ;
 
+    void test() override ;
+
 private:
 
     void add(int value, _node *&node);

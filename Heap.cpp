@@ -89,3 +89,7 @@ int Heap::getLevel(int index) {
     }
     return level;
 }
+
+void Heap::test() {
+    Array::test();
+}

@@ -34,6 +34,8 @@ public:
 
     void generate(int size) override ;
 
+    void test() override ;
+
 };
 
 
