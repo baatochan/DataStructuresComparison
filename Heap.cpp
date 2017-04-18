@@ -146,7 +146,7 @@ void Heap::test() {
 
             string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
             path += "kopiec-";
-            path += "usuwanie-pozycji-";
+            path += "usuwanie-pozycjis-";
             path += to_string(numberOfElements) + "-";
             path += to_string(range) + ".txt";
 

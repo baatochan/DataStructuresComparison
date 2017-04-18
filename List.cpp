@@ -398,7 +398,7 @@ void List::test() {
 
             string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
             path += "lista-";
-            path += "usuwanie-pozycji-";
+            path += "usuwanie-pozycjip-";
             path += to_string(numberOfElements) + "-";
             path += to_string(range) + ".txt";
 
