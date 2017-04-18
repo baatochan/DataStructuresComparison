@@ -243,6 +243,6 @@ void Array::test() {
         }
     */ //usuwanie
 
-    
+
 
 }
