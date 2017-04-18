@@ -134,4 +134,45 @@ void Heap::test() {
             }
         }
     */ //dodawanie
+
+    Counter counter;
+    int nOE[3] = {50, 10000, 20000};
+    int r[3] = {100, RAND_MAX/2, RAND_MAX};
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            int numberOfElements = nOE[i];
+            int range = r[j];
+
+            string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
+            path += "lista-";
+            path += "usuwanie-wartosci-";
+            path += to_string(numberOfElements) + "-";
+            path += to_string(range) + ".txt";
+
+            fstream file(path, fstream::out);
+            srand(time(NULL));
+
+            if(!file.is_open()) {
+                cout<<"Wyniki się nie zapiszą!!!"<<endl;
+                return;
+            }
+
+            generate(numberOfElements,range);
+
+            file.setf(ios::fixed);
+
+            for (int i = 0; i < 10; i++) {
+                int value = rand() % range;
+                add(value, size/2);
+                counter.startCounter();
+                remove(value);
+                double result = counter.getCounter();
+                cout<<result<<endl;
+                file<<result<<endl;
+            }
+
+            file.close();
+        }
+    }
 }
