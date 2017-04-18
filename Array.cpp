@@ -156,11 +156,44 @@ void Array::test() {
      *  cout<<counter.getCounter();
      *
      */ //Learning to use counter
-    int x = 0;
-    cout<<RAND_MAX;
-    while (x != (RAND_MAX - 1)) {
-        srand(time(NULL));
-        x = rand() % RAND_MAX;
-        //cout<<"n";
+    Counter counter;
+    int nOE[3] = {50, 10000, 20000};
+    int r[3] = {100, RAND_MAX/2, RAND_MAX};
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            int numberOfElements = nOE[i];
+            int range = r[j];
+
+            string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
+            path += "tablica-";
+            path += "dodawanie-";
+            path += to_string(numberOfElements) + "-";
+            path += to_string(range) + ".txt";
+
+            fstream file(path, fstream::out);
+            srand(time(NULL));
+
+            if(!file.is_open()) {
+                cout<<"Wyniki się nie zapiszą!!!"<<endl;
+                return;
+            }
+
+            generate(numberOfElements,range);
+
+            file.setf(ios::fixed);
+
+            for (int i = 0; i < 10; i++) {
+                int value = rand() % range;
+                counter.startCounter();
+                add(value, size);
+                double result = counter.getCounter();
+                cout<<result<<endl;
+                file<<result<<endl;
+                removePosition(size - 1);
+            }
+
+            file.close();
+        }
     }
 }
