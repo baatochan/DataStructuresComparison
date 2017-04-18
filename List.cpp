@@ -398,7 +398,7 @@ void List::test() {
 
             string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
             path += "lista-";
-            path += "usuwanie-pozycjip-";
+            path += "usuwanie-pozycjik-";
             path += to_string(numberOfElements) + "-";
             path += to_string(range) + ".txt";
 
@@ -416,9 +416,9 @@ void List::test() {
 
             for (int i = 0; i < 10; i++) {
                 int value = rand() % range;
-                add(value, 0);
+                add(value, size);
                 counter.startCounter();
-                removePosition(0);
+                removePosition(size-1);
                 double result = counter.getCounter();
                 cout<<result<<endl;
                 file<<result<<endl;
