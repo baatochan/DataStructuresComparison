@@ -103,7 +103,7 @@ void Heap::test() {
 
             string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
             path += "kopiec-";
-            path += "dodawanie-";
+            path += "dodawaniep-";
             path += to_string(numberOfElements) + "-";
             path += to_string(range) + ".txt";
 
@@ -122,11 +122,11 @@ void Heap::test() {
             for (int i = 0; i < 10; i++) {
                 int value = rand() % range;
                 counter.startCounter();
-                add(value, size);
+                add(value, 0);
                 double result = counter.getCounter();
                 cout<<result<<endl;
                 file<<result<<endl;
-                removePosition(size - 1);
+                removePosition(0);
             }
 
             file.close();
