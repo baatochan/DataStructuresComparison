@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include "Counter.h"
 
 using namespace std;
 
@@ -37,7 +38,7 @@ public:
 
     virtual string print()= 0;
 
-    virtual void generate(int size)= 0;
+    virtual void generate(int size, int range = RAND_MAX)= 0;
 
     virtual void test() = 0;
 

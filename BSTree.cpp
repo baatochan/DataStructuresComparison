@@ -86,11 +86,11 @@ string BSTree::print() {
     return s;
 }
 
-void BSTree::generate(int size) {
+void BSTree::generate(int size, int range) {
     srand(time(NULL));
 
     for (int i = 0; i < size; i++) {
-        add((rand()-(RAND_MAX/2)));
+        add(rand() % (range + 1));
     }
 }
 

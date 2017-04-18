@@ -45,8 +45,8 @@ string Heap::print() {
     return Array::print();
 }
 
-void Heap::generate(int size) {
-    Array::generate(size);
+void Heap::generate(int size, int range) {
+    Array::generate(size, range);
     heapifyEverything();
 }
 

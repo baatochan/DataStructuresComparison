@@ -262,11 +262,11 @@ string List::print() {
     return temp;
 }
 
-void List::generate(int size) {
+void List::generate(int size, int range) {
     srand(time(NULL));
 
     for (int i = 0; i < size; i++) {
-        add((rand()-(RAND_MAX/2)),this->size);
+        add((rand() % (range + 1)),this->size);
     }
 }
 

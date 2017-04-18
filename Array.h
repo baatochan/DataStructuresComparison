@@ -32,7 +32,7 @@ public:
 
     string print() override ;
 
-    void generate(int size) override ;
+    void generate(int size, int range = RAND_MAX) override ;
 
     void test() override ;
 

@@ -62,8 +62,10 @@ void Program::displayMenu(string info) {
     cout << "2.Wczytaj z pliku" << endl;
     cout << "3.Utworz losowo" << endl;
     cout << "4.Usun wartosc" << endl;
-    cout << "5.Usun pozycje" << endl;
-    cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+    if(!_isBST) {
+        cout << "5.Usun pozycje" << endl;
+        cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+    }
     cout << "7.Znajdz" << endl;
     cout << "8.Wyswietl" << endl;
     cout << "9.Test (pomiary)" << endl;
@@ -157,6 +159,7 @@ void Program::takeActionInMenu(string info) {
 
             case '9': //cout << "9.Test (pomiary)" << endl;
                 // można sobie tu dodać własne case'y
+                _structure->test();
                 break;
 
             case '0':

@@ -139,14 +139,28 @@ string Array::print() {
     return temp;
 }
 
-void Array::generate(int size) {
+void Array::generate(int size, int range) {
     srand(time(NULL));
 
     for (int i = 0; i < size; ++i) {
-        add((rand()-(RAND_MAX/2)),this->size);
+        add((rand() % (range + 1)),this->size);
     }
 }
 
 void Array::test() {
-
+    /*
+     *  Counter counter;
+     *  counter.startCounter();
+     *  Sleep(1000);
+     *  cout.setf( ios::fixed );
+     *  cout<<counter.getCounter();
+     *
+     */ //Learning to use counter
+    int x = 0;
+    cout<<RAND_MAX;
+    while (x != (RAND_MAX - 1)) {
+        srand(time(NULL));
+        x = rand() % RAND_MAX;
+        //cout<<"n";
+    }
 }
