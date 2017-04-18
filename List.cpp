@@ -344,6 +344,7 @@ void List::removeLast() {
 }
 
 void List::test() {
+    
     Counter counter;
     int nOE[3] = {50, 10000, 20000};
     int r[3] = {100, RAND_MAX/2, RAND_MAX};
@@ -355,7 +356,7 @@ void List::test() {
 
             string path = "C:\\cpp\\DataStructuresSDiZO\\wyniki\\";
             path += "lista-";
-            path += "dodawaniep-";
+            path += "dodawanies-";
             path += to_string(numberOfElements) + "-";
             path += to_string(range) + ".txt";
 
@@ -374,7 +375,7 @@ void List::test() {
             for (int i = 0; i < 10; i++) {
                 int value = rand() % range;
                 counter.startCounter();
-                add(value, 0);
+                add(value, size/2);
                 double result = counter.getCounter();
                 cout<<result<<endl;
                 file<<result<<endl;
