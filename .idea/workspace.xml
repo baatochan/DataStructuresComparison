@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="DataStructuresSDiZO" targetName="DataStructuresSDiZO" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="957d01c5-17e3-4fc3-8642-aa8f7157369e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BSTree.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BSTree.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Counter.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Counter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Heap.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Heap.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdizo1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdizo1.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-dodawanie-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-szukanie-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - bst/bst-usuwanie-wartosci-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniek-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-dodawaniep-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-szukanie-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjik-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-pozycjis-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - kopiec/kopiec-usuwanie-wartosci-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniek-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawaniep-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-dodawanies-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-szukanie-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjik-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjip-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-pozycjis-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - lista/lista-usuwanie-wartosci-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-dodawanie-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-szukanie-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-pozycji-50-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-10000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-10000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-10000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-20000-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-20000-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-20000-32767.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-50-100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-50-16383.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wyniki - tablica/tablica-usuwanie-wartosci-50-32767.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Array.cpp" afterPath="$PROJECT_DIR$/Array.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Array.h" afterPath="$PROJECT_DIR$/Array.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/List.cpp" afterPath="$PROJECT_DIR$/List.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/List.h" afterPath="$PROJECT_DIR$/List.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program.cpp" afterPath="$PROJECT_DIR$/Program.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Program.h" afterPath="$PROJECT_DIR$/Program.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structure.cpp" afterPath="$PROJECT_DIR$/Structure.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Structure.h" afterPath="$PROJECT_DIR$/Structure.h" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="DataStructuresSDiZO" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="List.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/List.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="461" column="43" lean-forward="false" selection-start-line="461" selection-start-column="43" selection-end-line="461" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#2#0" expanded="false" />
+                <element signature="e#71#329#1" expanded="false" />
+                <element signature="e#343#431#0" expanded="false" />
+                <element signature="e#433#826#0" expanded="false" />
+                <element signature="e#828#1000#0" expanded="false" />
+                <element signature="e#1002#1403#0" expanded="false" />
+                <element signature="e#1405#2936#0" expanded="false" />
+                <element signature="e#2938#3867#0" expanded="false" />
+                <element signature="e#3869#5654#0" expanded="false" />
+                <element signature="e#5656#7126#0" expanded="false" />
+                <element signature="e#7128#7556#0" expanded="false" />
+                <element signature="e#7558#7717#0" expanded="false" />
+                <element signature="e#7731#8095#0" expanded="false" />
+                <element signature="e#8097#8602#0" expanded="false" />
+                <element signature="e#8604#9021#0" expanded="false" />
+                <element signature="e#9023#9416#0" expanded="false" />
+                <element signature="e#9442#10736#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>null</find>
+      <find>sdizo2</find>
+      <find>std</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/ListElement.h" />
+        <option value="$PROJECT_DIR$/ListElement.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+        <option value="$PROJECT_DIR$/Program.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Structure.cpp" />
+        <option value="$PROJECT_DIR$/Counter.cpp" />
+        <option value="$PROJECT_DIR$/Counter.h" />
+        <option value="$PROJECT_DIR$/Program.cpp" />
+        <option value="$PROJECT_DIR$/Structure.h" />
+        <option value="$PROJECT_DIR$/Array.h" />
+        <option value="$PROJECT_DIR$/List.h" />
+        <option value="$PROJECT_DIR$/BSTree.h" />
+        <option value="$PROJECT_DIR$/Heap.h" />
+        <option value="$PROJECT_DIR$/Array.cpp" />
+        <option value="$PROJECT_DIR$/Heap.cpp" />
+        <option value="$PROJECT_DIR$/BSTree.cpp" />
+        <option value="$PROJECT_DIR$/List.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>C/C++</id>
+          </State>
+          <State>
+            <id>FunctionsC/C++</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>NotImplementedFunctions</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataStructuresSDiZO" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataStructuresSDiZO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructuresSDiZO" TARGET_NAME="DataStructuresSDiZO" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructuresSDiZO" TARGET_NAME="DataStructuresSDiZO" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataStructuresSDiZO" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataStructuresSDiZO" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructuresSDiZO" TARGET_NAME="DataStructuresSDiZO" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructuresSDiZO" RUN_TARGET_NAME="DataStructuresSDiZO">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DataStructuresSDiZO" RUN_TARGET_NAME="DataStructuresSDiZO" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.DataStructuresSDiZO" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Build All" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="957d01c5-17e3-4fc3-8642-aa8f7157369e" name="Default" comment="" />
+      <created>1490559718934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1490559718934</updated>
+      <workItem from="1490559721278" duration="3938000" />
+      <workItem from="1490563824826" duration="1831000" />
+      <workItem from="1490702726833" duration="146000" />
+      <workItem from="1490779724863" duration="3801000" />
+      <workItem from="1490783541928" duration="52000" />
+      <workItem from="1490790537715" duration="1440000" />
+      <workItem from="1491054461187" duration="238000" />
+      <workItem from="1491196556121" duration="453000" />
+      <workItem from="1491737141561" duration="1002000" />
+      <workItem from="1491738166017" duration="261000" />
+      <workItem from="1491738821722" duration="1292000" />
+      <workItem from="1491740132018" duration="24000" />
+      <workItem from="1491740177774" duration="31000" />
+      <workItem from="1491740228237" duration="432000" />
+      <workItem from="1491740685013" duration="20000" />
+      <workItem from="1491903587463" duration="18541000" />
+      <workItem from="1491946956012" duration="72000" />
+      <workItem from="1492171469868" duration="5720000" />
+      <workItem from="1492208318367" duration="4724000" />
+      <workItem from="1492253939304" duration="1772000" />
+      <workItem from="1492255847600" duration="981000" />
+      <workItem from="1492256839786" duration="20000" />
+      <workItem from="1492276301838" duration="7046000" />
+      <workItem from="1492288342057" duration="1174000" />
+      <workItem from="1492370707918" duration="6671000" />
+      <workItem from="1492504920123" duration="1981000" />
+      <workItem from="1492507522429" duration="10291000" />
+      <workItem from="1492549446553" duration="82000" />
+      <workItem from="1492550586229" duration="38000" />
+      <workItem from="1493117231865" duration="215000" />
+      <workItem from="1493117565546" duration="3000" />
+    </task>
+    <task id="LOCAL-00001" summary="shiiiiiiiit, everythings broken, why do i even live">
+      <created>1490783239598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1490783239598</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added missing }, still doesnt work at all">
+      <created>1490783301070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1490783301070</updated>
+    </task>
+    <task id="LOCAL-00003" summary="varaibles name changing">
+      <created>1490791178213</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490791178214</updated>
+    </task>
+    <task id="LOCAL-00004" summary="renaming names of functions and using structure">
+      <created>1491738121467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1491738121467</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactoring and rebuilding whole program. gotten rid of the list class. it's almost like a fresh start.">
+      <created>1491905769980</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491905769980</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commenting usage of non existing yet classes">
+      <created>1491905995735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491905995735</updated>
+    </task>
+    <task id="LOCAL-00007" summary="getting rid of not needed imports">
+      <created>1491906168667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1491906168667</updated>
+    </task>
+    <task id="LOCAL-00008" summary="formatting changes">
+      <created>1491906553135</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491906553135</updated>
+    </task>
+    <task id="LOCAL-00009" summary="implemented arrays">
+      <created>1491917323077</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1491917323077</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixes in arrays; starting implementation of lists">
+      <created>1491922230158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491922230158</updated>
+    </task>
+    <task id="LOCAL-00011" summary="implemented private class _listElement">
+      <created>1491923623141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1491923623141</updated>
+    </task>
+    <task id="LOCAL-00012" summary="everything beside removing in Lists works">
+      <created>1492179945917</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1492179945917</updated>
+    </task>
+    <task id="LOCAL-00013" summary="looks like list is working">
+      <created>1492214086514</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1492214086514</updated>
+    </task>
+    <task id="LOCAL-00014" summary="started implementation of bst">
+      <created>1492214852456</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1492214852456</updated>
+    </task>
+    <task id="LOCAL-00015" summary="bst should work, started implementation of heap">
+      <created>1492255472961</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1492255472961</updated>
+    </task>
+    <task id="LOCAL-00016" summary="working on heap">
+      <created>1492255703918</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1492255703918</updated>
+    </task>
+    <task id="LOCAL-00017" summary="working on heap">
+      <created>1492255999790</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1492255999790</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fixed bug during removing element of bst">
+      <created>1492256530025</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1492256530025</updated>
+    </task>
+    <task id="LOCAL-00019" summary="working on heap">
+      <created>1492256826467</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1492256826467</updated>
+    </task>
+    <task id="LOCAL-00020" summary="heap should work">
+      <created>1492279156598</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1492279156598</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fixes in heap">
+      <created>1492279749923</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1492279749923</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fixes in heap">
+      <created>1492288372466</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1492288372466</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fixes in heap">
+      <created>1492288726484</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1492288726484</updated>
+    </task>
+    <task id="LOCAL-00024" summary="almost copypastied implementation of DSW made in java; no idea if it's gonna work or not">
+      <created>1492374651901</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1492374651901</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fixes to dsw">
+      <created>1492380559686</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1492380559686</updated>
+    </task>
+    <task id="LOCAL-00026" summary="end of implementation??; can we move on to testing">
+      <created>1492381199169</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1492381199169</updated>
+    </task>
+    <task id="LOCAL-00027" summary="formatting fixes">
+      <created>1492382355465</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1492382355465</updated>
+    </task>
+    <task id="LOCAL-00028" summary="formatting fixes">
+      <created>1492382449123</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1492382449123</updated>
+    </task>
+    <task id="LOCAL-00029" summary="implememnted time counter and structure of test method">
+      <created>1492505615248</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1492505615248</updated>
+    </task>
+    <task id="LOCAL-00030" summary="getting ready for testing">
+      <created>1492509405670</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1492509405670</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ready to test adding elments">
+      <created>1492517275323</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1492517275323</updated>
+    </task>
+    <task id="LOCAL-00032" summary="tested array and bst; testing another variant of adding to list and heap">
+      <created>1492518158923</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1492518158923</updated>
+    </task>
+    <task id="LOCAL-00033" summary="another variant of adding for list">
+      <created>1492518351301</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1492518351301</updated>
+    </task>
+    <task id="LOCAL-00034" summary="adding testing done">
+      <created>1492518393105</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1492518393105</updated>
+    </task>
+    <task id="LOCAL-00035" summary="testing removing the value">
+      <created>1492518750940</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1492518750940</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix">
+      <created>1492519273684</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1492519273684</updated>
+    </task>
+    <task id="LOCAL-00037" summary="testing of removing">
+      <created>1492519499980</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1492519499980</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix">
+      <created>1492519533325</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1492519533325</updated>
+    </task>
+    <task id="LOCAL-00039" summary="another removing tests">
+      <created>1492519686085</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1492519686085</updated>
+    </task>
+    <task id="LOCAL-00040" summary="another removing tests">
+      <created>1492519809355</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1492519809355</updated>
+    </task>
+    <task id="LOCAL-00041" summary="ready to another tests">
+      <created>1492519862059</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1492519862059</updated>
+    </task>
+    <task id="LOCAL-00042" summary="testing searching">
+      <created>1492520092312</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1492520092312</updated>
+    </task>
+    <task id="LOCAL-00043" summary="fucking end??">
+      <created>1492549487536</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1492549487536</updated>
+    </task>
+    <task id="LOCAL-00044" summary="fucking end??">
+      <created>1492549515991</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1492549515991</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="74292000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2157738" sideWeight="0.49608064" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2159228" sideWeight="0.50391936" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32362822" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28219485" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47816348" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="everything beside removing in Lists works" />
+    <MESSAGE value="looks like list is working" />
+    <MESSAGE value="started implementation of bst" />
+    <MESSAGE value="bst should work, started implementation of heap" />
+    <MESSAGE value="fixed bug during removing element of bst" />
+    <MESSAGE value="working on heap" />
+    <MESSAGE value="heap should work" />
+    <MESSAGE value="fixes in heap" />
+    <MESSAGE value="almost copypastied implementation of DSW made in java; no idea if it's gonna work or not" />
+    <MESSAGE value="fixes to dsw" />
+    <MESSAGE value="end of implementation??; can we move on to testing" />
+    <MESSAGE value="formatting fixes" />
+    <MESSAGE value="implememnted time counter and structure of test method" />
+    <MESSAGE value="getting ready for testing" />
+    <MESSAGE value="ready to test adding elments" />
+    <MESSAGE value="tested array and bst; testing another variant of adding to list and heap" />
+    <MESSAGE value="another variant of adding for list" />
+    <MESSAGE value="adding testing done" />
+    <MESSAGE value="testing removing the value" />
+    <MESSAGE value="testing of removing" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="another removing tests" />
+    <MESSAGE value="ready to another tests" />
+    <MESSAGE value="testing searching" />
+    <MESSAGE value="fucking end??" />
+    <option name="LAST_COMMIT_MESSAGE" value="fucking end??" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="94" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#71#329#1" expanded="false" />
+            <element signature="e#343#431#0" expanded="false" />
+            <element signature="e#433#826#0" expanded="false" />
+            <element signature="e#828#1000#0" expanded="false" />
+            <element signature="e#1002#1403#0" expanded="false" />
+            <element signature="e#1405#2936#0" expanded="false" />
+            <element signature="e#2938#3867#0" expanded="false" />
+            <element signature="e#3869#5654#0" expanded="false" />
+            <element signature="e#5656#7126#0" expanded="false" />
+            <element signature="e#7128#7556#0" expanded="false" />
+            <element signature="e#7558#7717#0" expanded="false" />
+            <element signature="e#7731#8095#0" expanded="false" />
+            <element signature="e#8097#8602#0" expanded="false" />
+            <element signature="e#8604#9021#0" expanded="false" />
+            <element signature="e#9023#9416#0" expanded="false" />
+            <element signature="e#9442#10736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListElement.cpp" />
+    <entry file="file://$PROJECT_DIR$/Structure.cpp" />
+    <entry file="file://$PROJECT_DIR$/Structure.h" />
+    <entry file="file://$PROJECT_DIR$/ListElement.h" />
+    <entry file="file://$PROJECT_DIR$/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#71#329#1" expanded="false" />
+            <element signature="e#343#431#0" expanded="false" />
+            <element signature="e#433#826#0" expanded="false" />
+            <element signature="e#828#1000#0" expanded="false" />
+            <element signature="e#1002#1403#0" expanded="false" />
+            <element signature="e#1405#2936#0" expanded="false" />
+            <element signature="e#2938#3867#0" expanded="false" />
+            <element signature="e#3869#5654#0" expanded="false" />
+            <element signature="e#5656#7126#0" expanded="false" />
+            <element signature="e#7128#7556#0" expanded="false" />
+            <element signature="e#7558#7717#0" expanded="false" />
+            <element signature="e#7731#8095#0" expanded="false" />
+            <element signature="e#8097#8602#0" expanded="false" />
+            <element signature="e#8604#9021#0" expanded="false" />
+            <element signature="e#9023#9416#0" expanded="false" />
+            <element signature="e#9442#10736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListElement.cpp" />
+    <entry file="file://$PROJECT_DIR$/ListElement.h" />
+    <entry file="file://$PROJECT_DIR$/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#71#329#1" expanded="false" />
+            <element signature="e#343#431#0" expanded="false" />
+            <element signature="e#433#826#0" expanded="false" />
+            <element signature="e#828#1000#0" expanded="false" />
+            <element signature="e#1002#1403#0" expanded="false" />
+            <element signature="e#1405#2936#0" expanded="false" />
+            <element signature="e#2938#3867#0" expanded="false" />
+            <element signature="e#3869#5654#0" expanded="false" />
+            <element signature="e#5656#7126#0" expanded="false" />
+            <element signature="e#7128#7556#0" expanded="false" />
+            <element signature="e#7558#7717#0" expanded="false" />
+            <element signature="e#7731#8095#0" expanded="false" />
+            <element signature="e#8097#8602#0" expanded="false" />
+            <element signature="e#8604#9021#0" expanded="false" />
+            <element signature="e#9023#9416#0" expanded="false" />
+            <element signature="e#9442#10736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListElement.cpp" />
+    <entry file="file://$PROJECT_DIR$/ListElement.h" />
+    <entry file="file://$PROJECT_DIR$/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#71#329#1" expanded="false" />
+            <element signature="e#343#431#0" expanded="false" />
+            <element signature="e#433#826#0" expanded="false" />
+            <element signature="e#828#1000#0" expanded="false" />
+            <element signature="e#1002#1403#0" expanded="false" />
+            <element signature="e#1405#2936#0" expanded="false" />
+            <element signature="e#2938#3867#0" expanded="false" />
+            <element signature="e#3869#5654#0" expanded="false" />
+            <element signature="e#5656#7126#0" expanded="false" />
+            <element signature="e#7128#7556#0" expanded="false" />
+            <element signature="e#7558#7717#0" expanded="false" />
+            <element signature="e#7731#8095#0" expanded="false" />
+            <element signature="e#8097#8602#0" expanded="false" />
+            <element signature="e#8604#9021#0" expanded="false" />
+            <element signature="e#9023#9416#0" expanded="false" />
+            <element signature="e#9442#10736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListElement.cpp" />
+    <entry file="file://$PROJECT_DIR$/ListElement.h" />
+    <entry file="file://$PROJECT_DIR$/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu.cpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListElement.cpp" />
+    <entry file="file://$PROJECT_DIR$/ListElement.h" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Array.cpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Array.h" />
+    <entry file="file://$PROJECT_DIR$/List (1).cpp" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Counter.h" />
+    <entry file="file://$PROJECT_DIR$/Counter.cpp" />
+    <entry file="file://$PROJECT_DIR$/Program.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Structure.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="40" column="56" lean-forward="false" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Array.h" />
+    <entry file="file://$PROJECT_DIR$/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap.h" />
+    <entry file="file://$PROJECT_DIR$/BSTree.h" />
+    <entry file="file://$PROJECT_DIR$/Structure.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="461" column="43" lean-forward="false" selection-start-line="461" selection-start-column="43" selection-end-line="461" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#71#329#1" expanded="false" />
+            <element signature="e#343#431#0" expanded="false" />
+            <element signature="e#433#826#0" expanded="false" />
+            <element signature="e#828#1000#0" expanded="false" />
+            <element signature="e#1002#1403#0" expanded="false" />
+            <element signature="e#1405#2936#0" expanded="false" />
+            <element signature="e#2938#3867#0" expanded="false" />
+            <element signature="e#3869#5654#0" expanded="false" />
+            <element signature="e#5656#7126#0" expanded="false" />
+            <element signature="e#7128#7556#0" expanded="false" />
+            <element signature="e#7558#7717#0" expanded="false" />
+            <element signature="e#7731#8095#0" expanded="false" />
+            <element signature="e#8097#8602#0" expanded="false" />
+            <element signature="e#8604#9021#0" expanded="false" />
+            <element signature="e#9023#9416#0" expanded="false" />
+            <element signature="e#9442#10736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap.cpp" />
+    <entry file="file://$PROJECT_DIR$/BSTree.cpp" />
+    <entry file="file://$PROJECT_DIR$/Array.cpp" />
+  </component>
+</project>
