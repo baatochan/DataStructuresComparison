@@ -36,6 +36,7 @@ vector<int> Structure::loadRawDataFrom(string path) {
 }
 
 void Structure::test(string nameOfStructure) {
+	nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
 	char opt = 0;
 	Counter counter;
 	int nOE[3] = {50, 10000, 20000};
@@ -47,11 +48,11 @@ void Structure::test(string nameOfStructure) {
 	do {
 		cout<<"- TESTY -"<<endl;
 		cout<<"1. Dodawanie na poczatku"<<endl;
-		cout<<"2. Dodawanie na koncu"<<endl;
 		cout<<"3. Dodawanie w srodku"<<endl;
+		cout<<"2. Dodawanie na koncu"<<endl;
 		cout<<"4. Usuwanie na poczatku"<<endl;
-		cout<<"5. Usuwanie na koncu"<<endl;
 		cout<<"6. Usuwanie w srodku"<<endl;
+		cout<<"5. Usuwanie na koncu"<<endl;
 		cout<<"0. Powrot"<<endl;
 		cout << "Podaj opcje:";
 		cin >> opt;
@@ -60,15 +61,14 @@ void Structure::test(string nameOfStructure) {
 			case '1':
 				cout<<endl<<"Podaj ilosc testow: ";
 				cin>>numberOfTests;
-				for (int i = 0; i < sizeof(nOE) ; i++) {
-					for (int j = 0; j < sizeof(r); j++) {
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
 						string path = "..\\wyniki\\";
-						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
 						path += to_string(time(0));
-						path += "-" + nameOfStructure + "-dodawanie-poaczatek-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+						path += "-" + nameOfStructure + "-dodawanie-poczatek-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 
 						fstream file(path, fstream::out);
 						srand(time(NULL));
@@ -108,17 +108,15 @@ void Structure::test(string nameOfStructure) {
 			case '2':
 				cout<<endl<<"Podaj ilosc testow: ";
 				cin>>numberOfTests;
-				cout<<"Podaj index: ";
-				cin>>index;
-				for (int i = 0; i < sizeof(nOE) ; i++) {
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
 					cout<<"Ilosc elementow: "<<nOE[i]<<"; Podaj index: ";
 					cin>>index;
-					for (int j = 0; j < sizeof(r); j++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
 						string path = "..\\wyniki\\";
-						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-dodawanie-wlasnyIndex-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 
@@ -160,13 +158,13 @@ void Structure::test(string nameOfStructure) {
 			case '3':
 				cout<<endl<<"Podaj ilosc testow: ";
 				cin>>numberOfTests;
-				for (int i = 0; i < sizeof(nOE) ; i++) {
-					for (int j = 0; j < sizeof(r); j++) {
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
 						string path = "..\\wyniki\\";
-						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-dodawanie-koniec-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 
@@ -208,15 +206,15 @@ void Structure::test(string nameOfStructure) {
 			case '4':
 				cout<<endl<<"Podaj ilosc testow: ";
 				cin>>numberOfTests;
-				for (int i = 0; i < sizeof(nOE) ; i++) {
-					for (int j = 0; j < sizeof(r); j++) {
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
 						string path = "..\\wyniki\\";
-						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+
 						path += to_string(time(0));
-						path += "-" + nameOfStructure + "-usuwanie-poaczatek-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+						path += "-" + nameOfStructure + "-usuwanie-poczatek-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 
 						fstream file(path, fstream::out);
 						srand(time(NULL));
@@ -256,17 +254,15 @@ void Structure::test(string nameOfStructure) {
 			case '5':
 				cout<<endl<<"Podaj ilosc testow: ";
 				cin>>numberOfTests;
-				cout<<"Podaj index: ";
-				cin>>index;
-				for (int i = 0; i < sizeof(nOE) ; i++) {
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
 					cout<<"Ilosc elementow: "<<nOE[i]<<"; Podaj index: ";
 					cin>>index;
-					for (int j = 0; j < sizeof(r); j++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
 						string path = "..\\wyniki\\";
-						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-usuwanie-wlasnyIndex-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 
@@ -308,13 +304,13 @@ void Structure::test(string nameOfStructure) {
 			case '6':
 				cout<<endl<<"Podaj ilosc testow: ";
 				cin>>numberOfTests;
-				for (int i = 0; i < sizeof(nOE) ; i++) {
-					for (int j = 0; j < sizeof(r); j++) {
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
 						string path = "..\\wyniki\\";
-						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-usuwanie-koniec-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 

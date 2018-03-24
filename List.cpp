@@ -39,11 +39,12 @@ List::~List() {
 		_listElement *tempCurrentElement = _firstElement;
 		_listElement *tempNextElement = _firstElement->NextElement;
 
-		while (tempCurrentElement != nullptr) {
+		while (tempCurrentElement->NextElement != nullptr) {
 			delete tempCurrentElement;
 			tempCurrentElement = tempNextElement;
 			tempNextElement = tempNextElement->NextElement;
 		}
+		delete tempCurrentElement;
 	}
 }
 
@@ -319,11 +320,12 @@ void List::clear() {
 		_listElement *tempCurrentElement = _firstElement;
 		_listElement *tempNextElement = _firstElement->NextElement;
 
-		while (tempCurrentElement != nullptr) {
+		while (tempCurrentElement->NextElement != nullptr) {
 			delete tempCurrentElement;
 			tempCurrentElement = tempNextElement;
 			tempNextElement = tempNextElement->NextElement;
 		}
+		delete tempCurrentElement;
 	}
 
 	_firstElement = nullptr;

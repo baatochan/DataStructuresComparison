@@ -25,7 +25,7 @@ public:
 
 	void clear() override;
 
-	void test(string nameOfStructure);
+	void test(string nameOfStructure) override;
 
 private:
 

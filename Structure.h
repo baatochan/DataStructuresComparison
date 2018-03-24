@@ -42,7 +42,7 @@ public:
 
 	virtual void clear()= 0;
 
-    void test(string nameOfStructure);
+    virtual void test(string nameOfStructure);
 
 protected:
 
