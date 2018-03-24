@@ -38,7 +38,9 @@ public:
 
 	void generate(int size, int range = RAND_MAX) override;
 
-	void test() override;
+	void clear() override;
+
+	//void test() override;
 
 private:
 

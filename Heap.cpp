@@ -52,10 +52,6 @@ void Heap::generate(int size, int range) {
 	heapify();
 }
 
-void Heap::test() {
-	Array::test();
-}
-
 void Heap::heapifyUp(int index) {
 	if (parentExists(index))
 		if (_array[getParent(index)] < _array[index]) {
@@ -121,4 +117,8 @@ bool Heap::parentExists(int index) {
 		return false;
 	else
 		return true;
+}
+
+void Heap::clear() {
+	Array::clear();
 }

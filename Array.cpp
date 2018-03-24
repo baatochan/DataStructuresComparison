@@ -141,7 +141,11 @@ void Array::generate(int size, int range) {
 	}
 }
 
-void Array::test() {
+void Array::clear() {
+
+}
+
+/*void Array::test() {
 	/*
 	 *  Counter counter;
 	 *  counter.startCounter();
@@ -149,7 +153,7 @@ void Array::test() {
 	 *  cout.setf( ios::fixed );
 	 *  cout<<counter.getCounter();
 	 *
-	 */ //Learning to use counter
+	 * //Learning to use counter
 
 	/*
 		Counter counter;
@@ -192,7 +196,7 @@ void Array::test() {
 				file.close();
 			}
 		}
-	*/ //dodawanie
+	* //dodawanie
 
 	/*
 		Counter counter;
@@ -235,7 +239,7 @@ void Array::test() {
 				file.close();
 			}
 		}
-	*/ //usuwanie
+	* //usuwanie
 
 	Counter counter;
 	int nOE[3] = {50, 10000, 20000};
@@ -278,4 +282,4 @@ void Array::test() {
 		}
 	}
 
-}
+}*/

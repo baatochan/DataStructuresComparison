@@ -314,7 +314,11 @@ void List::removeLast() {
 	}
 }
 
-void List::test() {
+void List::clear() {
+
+}
+
+/*void List::test() {
 	/*
 		Counter counter;
 		int nOE[3] = {50, 10000, 20000};
@@ -356,7 +360,7 @@ void List::test() {
 				file.close();
 			}
 		}
-	*/ //dodawanie
+	* //dodawanie
 
 	/*
 		Counter counter;
@@ -400,7 +404,7 @@ void List::test() {
 				file.close();
 			}
 		}
-	*/ //usuwanie
+	* //usuwanie
 
 	Counter counter;
 	int nOE[3] = {50, 10000, 20000};
@@ -442,4 +446,4 @@ void List::test() {
 			file.close();
 		}
 	}
-}
+}*/

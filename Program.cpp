@@ -158,7 +158,7 @@ void Program::useMenu(string info) {
 
 			case '9': //cout << "9.Test (pomiary)" << endl;
 				// można sobie tu dodać własne case'y
-				_structure->test();
+				_structure->test(info);
 				break;
 
 			case '0':

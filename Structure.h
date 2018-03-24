@@ -40,7 +40,9 @@ public:
 
     virtual void generate(int size, int range = RAND_MAX)= 0;
 
-    virtual void test() = 0;
+	virtual void clear()= 0;
+
+    void test(string nameOfStructure);
 
 protected:
 
