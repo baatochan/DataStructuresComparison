@@ -9,14 +9,11 @@
 #include "Array.h"
 #include "List.h"
 #include "Heap.h"
-#include "BSTree.h"
 
 class Program {
 private:
 
     Structure* _structure;
-
-    bool _isBST = false;
 
 public:
 

@@ -13,7 +13,6 @@ void Program::start() {
         cout << "1.Tablica" << endl;
         cout << "2.Lista" << endl;
         cout << "3.Kopiec" << endl;
-        cout << "4.BST" << endl;
         cout << "0.Wyjscie" << endl;
         cout << "Podaj opcje:";
         cin >> option;
@@ -22,26 +21,17 @@ void Program::start() {
         switch (option){
             case '1':
                 _structure = new Array();
-                _isBST = false;
                 takeActionInMenu("--- TABLICA ---");
                 break;
 
             case '2':
                 _structure = new List();
-                _isBST = false;
                 takeActionInMenu("--- LISTA ---");
                 break;
 
             case '3':
                 _structure = new Heap();
-                _isBST = false;
                 takeActionInMenu("--- KOPIEC ---");
-                break;
-
-            case '4':
-                _structure = new BSTree();
-                _isBST = true;
-                takeActionInMenu("--- BINARY SEARCH TREE ---");
                 break;
 
             case '0':
@@ -62,10 +52,8 @@ void Program::displayMenu(string info) {
     cout << "2.Wczytaj z pliku" << endl;
     cout << "3.Utworz losowo" << endl;
     cout << "4.Usun wartosc" << endl;
-    if(!_isBST) {
-        cout << "5.Usun pozycje" << endl;
-        cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
-    }
+    cout << "5.Usun pozycje" << endl;
+    cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
     cout << "7.Znajdz" << endl;
     cout << "8.Wyswietl" << endl;
     cout << "9.Test (pomiary)" << endl;
@@ -86,12 +74,8 @@ void Program::takeActionInMenu(string info) {
         cout << endl;
         switch (opt){
             case '1': //cout << "1.Dodaj" << endl;
-                if(!_isBST){
-                    cout << "podaj index:";
-                    cin >> index;
-                }
-                else
-                    index = 0;
+				cout << "podaj index:";
+				cin >> index;
                 cout << "podaj wartość:";
                 cin >> value;
 
@@ -121,27 +105,19 @@ void Program::takeActionInMenu(string info) {
                 break;
 
             case '5': //cout << "5.Usun pozycje" << endl;
-                if(!_isBST){
-                    cout << "podaj index:";
-                    cin >> index;
-                    _structure->removePosition(index);
-                    cout<<_structure->print()<<endl;
-                }
-                else
-                    cout<<"Nie dotyczy drzew BST."<<endl;
+				cout << "podaj index:";
+				cin >> index;
+				_structure->removePosition(index);
+				cout<<_structure->print()<<endl;
                 break;
 
             case '6': //cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
-                if(!_isBST){
-                    cout << "podaj index:";
-                    cin >> index;
-                    cout << "podaj wartosc:";
-                    cin >> value;
-                    _structure->remove(index,value);
-                    cout<<_structure->print()<<endl;
-                }
-                else
-                    cout<<"Nie dotyczy drzew BST."<<endl;
+				cout << "podaj index:";
+				cin >> index;
+				cout << "podaj wartosc:";
+				cin >> value;
+				_structure->remove(index,value);
+				cout<<_structure->print()<<endl;
                 break;
 
             case '7': //cout << "7.Znajdz" << endl;
