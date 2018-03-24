@@ -6,54 +6,54 @@
 #include "Program.h"
 
 void Program::start() {
-    char option;
-    do{
-        cout << endl;
-        cout << "==== MENU GLOWNE ===" << endl;
-        cout << "1.Tablica" << endl;
-        cout << "2.Lista" << endl;
-        cout << "3.Kopiec" << endl;
-        cout << "0.Wyjscie" << endl;
-        cout << "Podaj opcje:";
-        cin >> option;
-        cout << endl;
+	char option;
+	do {
+		cout << endl;
+		cout << "==== MENU GLOWNE ===" << endl;
+		cout << "1.Tablica" << endl;
+		cout << "2.Lista" << endl;
+		cout << "3.Kopiec" << endl;
+		cout << "0.Wyjscie" << endl;
+		cout << "Podaj opcje:";
+		cin >> option;
+		cout << endl;
 
-        switch (option){
-            case '1':
-                _structure = new Array();
+		switch (option) {
+			case '1':
+				_structure = new Array();
 				_isHeap = false;
 				useMenu("--- TABLICA ---");
-                break;
+				break;
 
-            case '2':
-                _structure = new List();
+			case '2':
+				_structure = new List();
 				_isHeap = false;
 				useMenu("--- LISTA ---");
-                break;
+				break;
 
-            case '3':
-                _structure = new Heap();
+			case '3':
+				_structure = new Heap();
 				_isHeap = true;
 				useMenu("--- KOPIEC ---");
-                break;
+				break;
 
-            case '0':
-                break;
+			case '0':
+				break;
 
-            default:
-                cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
-                break;
-        }
+			default:
+				cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
+				break;
+		}
 
-    } while (option != '0');
+	} while (option != '0');
 }
 
 void Program::printMenu(string info) {
-    cout << endl;
-    cout << info << endl;
-    cout << "1.Dodaj" << endl;
-    cout << "2.Wczytaj z pliku" << endl;
-    cout << "3.Utworz losowo" << endl;
+	cout << endl;
+	cout << info << endl;
+	cout << "1.Dodaj" << endl;
+	cout << "2.Wczytaj z pliku" << endl;
+	cout << "3.Utworz losowo" << endl;
 	if (_isHeap) {
 		cout << "5.Usun korzen" << endl;
 	} else {
@@ -61,65 +61,65 @@ void Program::printMenu(string info) {
 		cout << "5.Usun pozycje" << endl;
 		cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
 	}
-    cout << "7.Znajdz" << endl;
-    cout << "8.Wyswietl" << endl;
-    cout << "9.Test (pomiary)" << endl;
-    cout << "0.Powrot do menu" << endl;
-    cout << "Podaj opcje:";
+	cout << "7.Znajdz" << endl;
+	cout << "8.Wyswietl" << endl;
+	cout << "9.Test (pomiary)" << endl;
+	cout << "0.Powrot do menu" << endl;
+	cout << "Podaj opcje:";
 }
 
 void Program::useMenu(string info) {
-    char opt = 0;
-    string fileName = "";
-    int index = 0;
-    int value = 0;
+	char opt = 0;
+	string fileName = "";
+	int index = 0;
+	int value = 0;
 
 
-    do{
+	do {
 		printMenu(info);
-        cin >> opt;
-        cout << endl;
-        switch (opt){
-            case '1': //cout << "1.Dodaj" << endl;
+		cin >> opt;
+		cout << endl;
+		switch (opt) {
+			case '1': //cout << "1.Dodaj" << endl;
 				if (!_isHeap) {
 					cout << "podaj index:";
 					cin >> index;
 				} else {
 					index = -1;
 				}
-                cout << "podaj wartość:";
-                cin >> value;
+				cout << "podaj wartość:";
+				cin >> value;
 
-                _structure->add(value,index);
-                cout<<_structure->print()<<endl;
-                break;
+				_structure->add(value, index);
+				cout << _structure->print() << endl;
+				break;
 
-            case '2': //cout << "2.Wczytaj z pliku" << endl;
-                cout << " Podaj nazwę pliku:";
-                cin >> fileName;
-                _structure->loadDataFrom(fileName);
-                cout<<_structure->print()<<endl;
-                break;
+			case '2': //cout << "2.Wczytaj z pliku" << endl;
+				cout << " Podaj nazwę pliku:";
+				cin >> fileName;
+				_structure->loadDataFrom(fileName);
+				cout << _structure->print() << endl;
+				break;
 
-            case '3':  //cout << "3.Utworz losowo" << endl;
-                cout << "Podaj ilość elementów:";
-                cin >> value;
-                _structure->generate(value);
-                cout<<_structure->print()<<endl;
-                break;
+			case '3':  //cout << "3.Utworz losowo" << endl;
+				cout << "Podaj ilość elementów:";
+				cin >> value;
+				_structure->generate(value);
+				cout << _structure->print() << endl;
+				break;
 
-            case '4': //cout << "4.Usun wartosc" << endl;
+			case '4': //cout << "4.Usun wartosc" << endl;
 				if (!_isHeap) {
 					cout << "podaj wartosc:";
 					cin >> value;
 					_structure->remove(value);
 					cout << _structure->print() << endl;
 				} else {
-					cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
+					cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
 				}
-                break;
+				break;
 
-            case '5': //cout << "5.Usun pozycje" << endl;
+			case '5': //cout << "5.Usun pozycje" << endl;
 				if (!_isHeap) {
 					cout << "podaj index:";
 					cin >> index;
@@ -127,10 +127,10 @@ void Program::useMenu(string info) {
 					index = 0;
 				}
 				_structure->removePosition(index);
-				cout<<_structure->print()<<endl;
-                break;
+				cout << _structure->print() << endl;
+				break;
 
-            case '6': //cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+			case '6': //cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
 				if (!_isHeap) {
 					cout << "podaj index:";
 					cin >> index;
@@ -139,37 +139,37 @@ void Program::useMenu(string info) {
 					_structure->remove(index, value);
 					cout << _structure->print() << endl;
 				} else {
-					cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
+					cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
 				}
-                break;
+				break;
 
-            case '7': //cout << "7.Znajdz" << endl;
-                cout << " podaj waertość:";
-                cin >> value;
-                if (_structure->lookFor(value))
-                    cout << "poadana wartośc jest w strukturze";
-                else
-                    cout << "poadanej wartości NIE ma w strukturze";
-                break;
+			case '7': //cout << "7.Znajdz" << endl;
+				cout << " podaj waertość:";
+				cin >> value;
+				if (_structure->lookFor(value))
+					cout << "poadana wartośc jest w strukturze";
+				else
+					cout << "poadanej wartości NIE ma w strukturze";
+				break;
 
-            case '8':  //cout << "8.Wyswietl" << endl;
-                cout<<_structure->print()<<endl;
-                break;
+			case '8':  //cout << "8.Wyswietl" << endl;
+				cout << _structure->print() << endl;
+				break;
 
-            case '9': //cout << "9.Test (pomiary)" << endl;
-                // można sobie tu dodać własne case'y
-                _structure->test();
-                break;
+			case '9': //cout << "9.Test (pomiary)" << endl;
+				// można sobie tu dodać własne case'y
+				_structure->test();
+				break;
 
-            case '0':
-                break;
+			case '0':
+				break;
 
-            default:
-                cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
-                break;
-        }
+			default:
+				cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
+				break;
+		}
 
-    } while (opt != '0');
+	} while (opt != '0');
 
-    delete _structure;
+	delete _structure;
 }

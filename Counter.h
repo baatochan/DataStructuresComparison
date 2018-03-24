@@ -1,7 +1,7 @@
 //
 // Created by barto on 18.04.17.
 //
-// Code done Ramónster.
+// Code written by Ramónster.
 // It was said in task description that we can use code from that link.
 //
 
@@ -15,15 +15,15 @@
 class Counter {
 private:
 
-    double PCFreq = 0.0;
+	double PCFreq = 0.0;
 
-    __int64 CounterStart = 0;
+	__int64 CounterStart = 0;
 
 public:
 
-    void startCounter();
+	void startCounter();
 
-    double getCounter();
+	double getCounter();
 
 };
 

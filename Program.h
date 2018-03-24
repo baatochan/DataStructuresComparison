@@ -13,19 +13,19 @@
 class Program {
 private:
 
-    Structure* _structure;
+	Structure *_structure;
 
 	bool _isHeap;
 
 public:
 
-    void start();
+	void start();
 
 private:
 
-    void printMenu(string info);
+	void printMenu(string info);
 
-    void useMenu(string info);
+	void useMenu(string info);
 
 };
 

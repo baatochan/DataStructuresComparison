@@ -7,30 +7,30 @@
 // protected
 
 vector<int> Structure::loadRawDataFrom(string path) {
-    vector<int> returnIntVector = vector<int>();
-    vector<string> values = vector<string>();
+	vector<int> returnIntVector = vector<int>();
+	vector<string> values = vector<string>();
 
-    fstream file(path, ios::in);
+	fstream file(path, ios::in);
 
-    if (!file.is_open())
-        return returnIntVector;
+	if (!file.is_open())
+		return returnIntVector;
 
-    string amountOfNumbersS = "";
-    getline(file, amountOfNumbersS);
-    int amountOfNumbers = stoi(amountOfNumbersS);
+	string amountOfNumbersS = "";
+	getline(file, amountOfNumbersS);
+	int amountOfNumbers = stoi(amountOfNumbersS);
 
-    for (int i = 0; i < amountOfNumbers; i++) {
-        string temp = "";
-        getline(file, temp);
-        values.push_back(temp);
-    }
+	for (int i = 0; i < amountOfNumbers; i++) {
+		string temp = "";
+		getline(file, temp);
+		values.push_back(temp);
+	}
 
-    if (values.empty())
-        return returnIntVector;
+	if (values.empty())
+		return returnIntVector;
 
-    for (int i = 0; i < values.size(); i++) {
-        returnIntVector.push_back(stoi(values[i]));
-    }
+	for (int i = 0; i < values.size(); i++) {
+		returnIntVector.push_back(stoi(values[i]));
+	}
 
-    return returnIntVector;
+	return returnIntVector;
 }
