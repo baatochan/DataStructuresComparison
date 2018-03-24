@@ -137,7 +137,7 @@ void Array::generate(int size, int range) {
 	srand(time(NULL));
 
 	for (int i = 0; i < size; ++i) {
-		add((rand() % (range + 1)), this->size);
+		Array::add((rand() % (range + 1)), this->size);
 	}
 }
 
