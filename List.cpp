@@ -315,7 +315,21 @@ void List::removeLast() {
 }
 
 void List::clear() {
+	if (_firstElement != nullptr) {
+		_listElement *tempCurrentElement = _firstElement;
+		_listElement *tempNextElement = _firstElement->NextElement;
 
+		while (tempCurrentElement != nullptr) {
+			delete tempCurrentElement;
+			tempCurrentElement = tempNextElement;
+			tempNextElement = tempNextElement->NextElement;
+		}
+	}
+
+	_firstElement = nullptr;
+	_lastElement = nullptr;
+
+	size = 0;
 }
 
 /*void List::test() {

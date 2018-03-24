@@ -142,7 +142,9 @@ void Array::generate(int size, int range) {
 }
 
 void Array::clear() {
-
+	delete[] _array;
+	size = 0;
+	_array = new int[0];
 }
 
 /*void Array::test() {

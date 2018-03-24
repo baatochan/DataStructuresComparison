@@ -42,6 +42,7 @@ void Structure::test(string nameOfStructure) {
 	int r[3] = {100, RAND_MAX/2, RAND_MAX};
 	int numberOfTests;
 	double sumOfResults;
+	int index;
 
 	do {
 		cout<<"- TESTY -"<<endl;
@@ -67,7 +68,7 @@ void Structure::test(string nameOfStructure) {
 						string path = "..\\wyniki\\";
 						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
 						path += to_string(time(0));
-						path += "-" + nameOfStructure + "-dodawanie-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+						path += "-" + nameOfStructure + "-dodawanie-poaczatek-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
 
 						fstream file(path, fstream::out);
 						srand(time(NULL));
@@ -82,7 +83,7 @@ void Structure::test(string nameOfStructure) {
 
 						sumOfResults = 0;
 
-						for (int i = 0; i < numberOfTests; i++) {
+						for (int k = 0; k < numberOfTests; k++) {
 							int value = rand() % range;
 							counter.startCounter();
 							add(value, 0);
@@ -105,11 +106,255 @@ void Structure::test(string nameOfStructure) {
 				}
 				break;
 			case '2':
+				cout<<endl<<"Podaj ilosc testow: ";
+				cin>>numberOfTests;
+				cout<<"Podaj index: ";
+				cin>>index;
+				for (int i = 0; i < sizeof(nOE) ; i++) {
+					cout<<"Ilosc elementow: "<<nOE[i]<<"; Podaj index: ";
+					cin>>index;
+					for (int j = 0; j < sizeof(r); j++) {
+						int numberOfElements = nOE[i];
+						int range = r[j];
+
+						string path = "..\\wyniki\\";
+						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+						path += to_string(time(0));
+						path += "-" + nameOfStructure + "-dodawanie-wlasnyIndex-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+
+						fstream file(path, fstream::out);
+						srand(time(NULL));
+
+						if(!file.is_open()) {
+							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+						}
+
+						generate(numberOfElements,range);
+
+						file.setf(ios::fixed);
+
+						sumOfResults = 0;
+
+						for (int k = 0; k < numberOfTests; k++) {
+							int value = rand() % range;
+							counter.startCounter();
+							add(value, index);
+							double result = counter.getCounter();
+							sumOfResults += result;
+							cout<<result<<endl;
+							file<<result<<endl;
+							removePosition(index);
+						}
+
+						sumOfResults /= numberOfTests;
+
+						cout<<"Srednia: "<<sumOfResults<<endl;
+						file<<"Srednia: "<<sumOfResults<<endl;
+
+						file.close();
+
+						clear();
+					}
+				}
+				break;
 			case '3':
+				cout<<endl<<"Podaj ilosc testow: ";
+				cin>>numberOfTests;
+				for (int i = 0; i < sizeof(nOE) ; i++) {
+					for (int j = 0; j < sizeof(r); j++) {
+						int numberOfElements = nOE[i];
+						int range = r[j];
+
+						string path = "..\\wyniki\\";
+						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+						path += to_string(time(0));
+						path += "-" + nameOfStructure + "-dodawanie-koniec-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+
+						fstream file(path, fstream::out);
+						srand(time(NULL));
+
+						if(!file.is_open()) {
+							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+						}
+
+						generate(numberOfElements,range);
+
+						file.setf(ios::fixed);
+
+						sumOfResults = 0;
+
+						for (int k = 0; k < numberOfTests; k++) {
+							int value = rand() % range;
+							counter.startCounter();
+							add(value, size);
+							double result = counter.getCounter();
+							sumOfResults += result;
+							cout<<result<<endl;
+							file<<result<<endl;
+							removePosition(size - 1);
+						}
+
+						sumOfResults /= numberOfTests;
+
+						cout<<"Srednia: "<<sumOfResults<<endl;
+						file<<"Srednia: "<<sumOfResults<<endl;
+
+						file.close();
+
+						clear();
+					}
+				}
+				break;
 			case '4':
+				cout<<endl<<"Podaj ilosc testow: ";
+				cin>>numberOfTests;
+				for (int i = 0; i < sizeof(nOE) ; i++) {
+					for (int j = 0; j < sizeof(r); j++) {
+						int numberOfElements = nOE[i];
+						int range = r[j];
+
+						string path = "..\\wyniki\\";
+						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+						path += to_string(time(0));
+						path += "-" + nameOfStructure + "-usuwanie-poaczatek-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+
+						fstream file(path, fstream::out);
+						srand(time(NULL));
+
+						if(!file.is_open()) {
+							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+						}
+
+						generate(numberOfElements,range);
+
+						file.setf(ios::fixed);
+
+						sumOfResults = 0;
+
+						for (int k = 0; k < numberOfTests; k++) {
+							int value = rand() % range;
+							add(value, 0);
+							counter.startCounter();
+							removePosition(0);
+							double result = counter.getCounter();
+							sumOfResults += result;
+							cout<<result<<endl;
+							file<<result<<endl;
+						}
+
+						sumOfResults /= numberOfTests;
+
+						cout<<"Srednia: "<<sumOfResults<<endl;
+						file<<"Srednia: "<<sumOfResults<<endl;
+
+						file.close();
+
+						clear();
+					}
+				}
+				break;
 			case '5':
+				cout<<endl<<"Podaj ilosc testow: ";
+				cin>>numberOfTests;
+				cout<<"Podaj index: ";
+				cin>>index;
+				for (int i = 0; i < sizeof(nOE) ; i++) {
+					cout<<"Ilosc elementow: "<<nOE[i]<<"; Podaj index: ";
+					cin>>index;
+					for (int j = 0; j < sizeof(r); j++) {
+						int numberOfElements = nOE[i];
+						int range = r[j];
+
+						string path = "..\\wyniki\\";
+						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+						path += to_string(time(0));
+						path += "-" + nameOfStructure + "-usuwanie-wlasnyIndex-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+
+						fstream file(path, fstream::out);
+						srand(time(NULL));
+
+						if(!file.is_open()) {
+							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+						}
+
+						generate(numberOfElements,range);
+
+						file.setf(ios::fixed);
+
+						sumOfResults = 0;
+
+						for (int k = 0; k < numberOfTests; k++) {
+							int value = rand() % range;
+							add(value, index);
+							counter.startCounter();
+							removePosition(index);
+							double result = counter.getCounter();
+							sumOfResults += result;
+							cout<<result<<endl;
+							file<<result<<endl;
+						}
+
+						sumOfResults /= numberOfTests;
+
+						cout<<"Srednia: "<<sumOfResults<<endl;
+						file<<"Srednia: "<<sumOfResults<<endl;
+
+						file.close();
+
+						clear();
+					}
+				}
+				break;
 			case '6':
+				cout<<endl<<"Podaj ilosc testow: ";
+				cin>>numberOfTests;
+				for (int i = 0; i < sizeof(nOE) ; i++) {
+					for (int j = 0; j < sizeof(r); j++) {
+						int numberOfElements = nOE[i];
+						int range = r[j];
+
+						string path = "..\\wyniki\\";
+						nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+						path += to_string(time(0));
+						path += "-" + nameOfStructure + "-usuwanie-koniec-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+
+						fstream file(path, fstream::out);
+						srand(time(NULL));
+
+						if(!file.is_open()) {
+							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+						}
+
+						generate(numberOfElements,range);
+
+						file.setf(ios::fixed);
+
+						sumOfResults = 0;
+
+						for (int k = 0; k < numberOfTests; k++) {
+							int value = rand() % range;
+							add(value, size);
+							counter.startCounter();
+							removePosition(size - 1);
+							double result = counter.getCounter();
+							sumOfResults += result;
+							cout<<result<<endl;
+							file<<result<<endl;
+						}
+
+						sumOfResults /= numberOfTests;
+
+						cout<<"Srednia: "<<sumOfResults<<endl;
+						file<<"Srednia: "<<sumOfResults<<endl;
+
+						file.close();
+
+						clear();
+					}
+				}
+				break;
 			case '0':
+				break;
 			default:
 				cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
 				break;
