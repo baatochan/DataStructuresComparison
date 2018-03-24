@@ -161,13 +161,13 @@ void Heap::test(string nameOfStructure) {
 							cout<<"Wyniki się nie zapiszą!!!"<<endl;
 						}
 
-						generate(numberOfElements,range);
-
 						file.setf(ios::fixed);
 
 						sumOfResults = 0;
 
 						for (int k = 0; k < numberOfTests; k++) {
+							generate(numberOfElements,range);
+
 							int value = rand() % range;
 							counter.startCounter();
 							add(value, -1);
@@ -176,6 +176,8 @@ void Heap::test(string nameOfStructure) {
 							cout<<result<<endl;
 							file<<result<<endl;
 							removePosition(-1);
+
+							clear();
 						}
 
 						sumOfResults /= numberOfTests;
@@ -184,8 +186,6 @@ void Heap::test(string nameOfStructure) {
 						file<<"Srednia: "<<sumOfResults<<endl;
 
 						file.close();
-
-						clear();
 					}
 				}
 				break;
@@ -209,13 +209,13 @@ void Heap::test(string nameOfStructure) {
 							cout<<"Wyniki się nie zapiszą!!!"<<endl;
 						}
 
-						generate(numberOfElements,range);
-
 						file.setf(ios::fixed);
 
 						sumOfResults = 0;
 
 						for (int k = 0; k < numberOfTests; k++) {
+							generate(numberOfElements,range);
+
 							int value = rand() % range;
 							add(value, -1);
 							counter.startCounter();
@@ -224,6 +224,8 @@ void Heap::test(string nameOfStructure) {
 							sumOfResults += result;
 							cout<<result<<endl;
 							file<<result<<endl;
+
+							clear();
 						}
 
 						sumOfResults /= numberOfTests;
@@ -232,8 +234,6 @@ void Heap::test(string nameOfStructure) {
 						file<<"Srednia: "<<sumOfResults<<endl;
 
 						file.close();
-
-						clear();
 					}
 				}
 				break;
