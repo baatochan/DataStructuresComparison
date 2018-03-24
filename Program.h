@@ -15,15 +15,17 @@ private:
 
     Structure* _structure;
 
+	bool _isHeap;
+
 public:
 
     void start();
 
 private:
 
-    void displayMenu(string info);
+    void printMenu(string info);
 
-    void takeActionInMenu(string info);
+    void useMenu(string info);
 
 };
 

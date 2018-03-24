@@ -21,17 +21,20 @@ void Program::start() {
         switch (option){
             case '1':
                 _structure = new Array();
-                takeActionInMenu("--- TABLICA ---");
+				_isHeap = false;
+				useMenu("--- TABLICA ---");
                 break;
 
             case '2':
                 _structure = new List();
-                takeActionInMenu("--- LISTA ---");
+				_isHeap = false;
+				useMenu("--- LISTA ---");
                 break;
 
             case '3':
                 _structure = new Heap();
-                takeActionInMenu("--- KOPIEC ---");
+				_isHeap = true;
+				useMenu("--- KOPIEC ---");
                 break;
 
             case '0':
@@ -45,15 +48,19 @@ void Program::start() {
     } while (option != '0');
 }
 
-void Program::displayMenu(string info) {
+void Program::printMenu(string info) {
     cout << endl;
     cout << info << endl;
     cout << "1.Dodaj" << endl;
     cout << "2.Wczytaj z pliku" << endl;
     cout << "3.Utworz losowo" << endl;
-    cout << "4.Usun wartosc" << endl;
-    cout << "5.Usun pozycje" << endl;
-    cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+	if (_isHeap) {
+		cout << "5.Usun korzen" << endl;
+	} else {
+		cout << "4.Usun wartosc" << endl;
+		cout << "5.Usun pozycje" << endl;
+		cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
+	}
     cout << "7.Znajdz" << endl;
     cout << "8.Wyswietl" << endl;
     cout << "9.Test (pomiary)" << endl;
@@ -61,7 +68,7 @@ void Program::displayMenu(string info) {
     cout << "Podaj opcje:";
 }
 
-void Program::takeActionInMenu(string info) {
+void Program::useMenu(string info) {
     char opt = 0;
     string fileName = "";
     int index = 0;
@@ -69,13 +76,17 @@ void Program::takeActionInMenu(string info) {
 
 
     do{
-        displayMenu(info);
+		printMenu(info);
         cin >> opt;
         cout << endl;
         switch (opt){
             case '1': //cout << "1.Dodaj" << endl;
-				cout << "podaj index:";
-				cin >> index;
+				if (!_isHeap) {
+					cout << "podaj index:";
+					cin >> index;
+				} else {
+					index = -1;
+				}
                 cout << "podaj wartość:";
                 cin >> value;
 
@@ -98,26 +109,38 @@ void Program::takeActionInMenu(string info) {
                 break;
 
             case '4': //cout << "4.Usun wartosc" << endl;
-                cout << "podaj wartosc:";
-                cin >> value;
-                _structure->remove(value);
-                cout<<_structure->print()<<endl;
+				if (!_isHeap) {
+					cout << "podaj wartosc:";
+					cin >> value;
+					_structure->remove(value);
+					cout << _structure->print() << endl;
+				} else {
+					cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
+				}
                 break;
 
             case '5': //cout << "5.Usun pozycje" << endl;
-				cout << "podaj index:";
-				cin >> index;
+				if (!_isHeap) {
+					cout << "podaj index:";
+					cin >> index;
+				} else {
+					index = 0;
+				}
 				_structure->removePosition(index);
 				cout<<_structure->print()<<endl;
                 break;
 
             case '6': //cout << "6.Usun pozycje, gdy zgadza sie wartosc" << endl;
-				cout << "podaj index:";
-				cin >> index;
-				cout << "podaj wartosc:";
-				cin >> value;
-				_structure->remove(index,value);
-				cout<<_structure->print()<<endl;
+				if (!_isHeap) {
+					cout << "podaj index:";
+					cin >> index;
+					cout << "podaj wartosc:";
+					cin >> value;
+					_structure->remove(index, value);
+					cout << _structure->print() << endl;
+				} else {
+					cout<<"Nie ma takiej opcji, wybierz jeszcze raz."<<endl;
+				}
                 break;
 
             case '7': //cout << "7.Znajdz" << endl;
