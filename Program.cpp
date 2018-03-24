@@ -124,7 +124,7 @@ void Program::useMenu(string info) {
 					cout << "podaj index:";
 					cin >> index;
 				} else {
-					index = 0;
+					index = -1;
 				}
 				_structure->removePosition(index);
 				cout << _structure->print() << endl;
