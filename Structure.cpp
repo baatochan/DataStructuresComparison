@@ -38,7 +38,7 @@ void Structure::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-dodawanie-poczatek-n" + to_string(numberOfElements) + "-r" +
 								to_string(range) + ".txt";
@@ -89,7 +89,7 @@ void Structure::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-dodawanie-wlasnyIndex-n" + to_string(numberOfElements) +
@@ -139,7 +139,7 @@ void Structure::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-dodawanie-koniec-n" + to_string(numberOfElements) + "-r" +
@@ -189,7 +189,7 @@ void Structure::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-usuwanie-poczatek-n" + to_string(numberOfElements) + "-r" +
@@ -241,7 +241,7 @@ void Structure::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-usuwanie-wlasnyIndex-n" + to_string(numberOfElements) + "-r" +
@@ -291,7 +291,7 @@ void Structure::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-usuwanie-koniec-n" + to_string(numberOfElements) + "-r" +

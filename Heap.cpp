@@ -85,7 +85,7 @@ void Heap::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-dodawanie-n" + to_string(numberOfElements) + "-r" +
 								to_string(range) + ".txt";
@@ -134,7 +134,7 @@ void Heap::test(string nameOfStructure) {
 						int numberOfElements = nOE[i];
 						int range = r[j];
 
-						string path = "..\\wyniki\\";
+						string path = "";
 
 						path += to_string(time(0));
 						path += "-" + nameOfStructure + "-usuwanie-n" + to_string(numberOfElements) + "-r" +
