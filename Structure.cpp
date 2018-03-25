@@ -19,11 +19,11 @@ void Structure::test(string nameOfStructure) {
 	do {
 		cout << "- TESTY -" << endl;
 		cout << "1. Dodawanie na poczatku" << endl;
-		cout << "3. Dodawanie w srodku" << endl;
-		cout << "2. Dodawanie na koncu" << endl;
+		cout << "2. Dodawanie w srodku" << endl;
+		cout << "3. Dodawanie na koncu" << endl;
 		cout << "4. Usuwanie na poczatku" << endl;
-		cout << "6. Usuwanie w srodku" << endl;
-		cout << "5. Usuwanie na koncu" << endl;
+		cout << "5. Usuwanie w srodku" << endl;
+		cout << "6. Usuwanie na koncu" << endl;
 		cout << "0. Powrot" << endl;
 		cout << "Podaj opcje:";
 		cin >> opt;
