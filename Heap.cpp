@@ -62,11 +62,10 @@ void Heap::test(string nameOfStructure) {
 	nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size() - 8);
 	char opt = 0;
 	Counter counter;
-	int nOE[3] = {50, 10000, 20000};
+	int nOE[4] = {50, 1000, 10000, 20000};
 	int r[3] = {100, RAND_MAX / 2, RAND_MAX};
 	int numberOfTests;
 	double sumOfResults;
-	int index;
 
 	do {
 		cout << "- TESTY -" << endl;
