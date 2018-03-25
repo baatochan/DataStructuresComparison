@@ -77,21 +77,21 @@ void Heap::heapifyDown(int index) {
 }
 
 void Heap::heapify() {
-	for (int i = getLastParent(); i >= 0 ; i--) {
+	for (int i = getLastParent(); i >= 0; i--) {
 		heapifyDown(i);
 	}
 }
 
 int Heap::getLastParent() {
-	return getParent(size-1);
+	return getParent(size - 1);
 }
 
 int Heap::getLeftChild(int index) {
-	return (2*index) + 1;
+	return (2 * index) + 1;
 }
 
 int Heap::getRightChild(int index) {
-	return (2*index) + 2;
+	return (2 * index) + 2;
 }
 
 bool Heap::leftChildExists(int index) {
@@ -109,7 +109,7 @@ bool Heap::rightChildExists(int index) {
 }
 
 int Heap::getParent(int index) {
-	return (index-1)/2;
+	return (index - 1) / 2;
 }
 
 bool Heap::parentExists(int index) {
@@ -124,27 +124,27 @@ void Heap::clear() {
 }
 
 void Heap::test(string nameOfStructure) {
-	nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size()-8);
+	nameOfStructure = nameOfStructure.substr(4, nameOfStructure.size() - 8);
 	char opt = 0;
 	Counter counter;
 	int nOE[3] = {50, 10000, 20000};
-	int r[3] = {100, RAND_MAX/2, RAND_MAX};
+	int r[3] = {100, RAND_MAX / 2, RAND_MAX};
 	int numberOfTests;
 	double sumOfResults;
 	int index;
 
 	do {
-		cout<<"- TESTY -"<<endl;
-		cout<<"1. Dodawanie"<<endl;
-		cout<<"2. Usuwanie"<<endl;
-		cout<<"0. Powrot"<<endl;
+		cout << "- TESTY -" << endl;
+		cout << "1. Dodawanie" << endl;
+		cout << "2. Usuwanie" << endl;
+		cout << "0. Powrot" << endl;
 		cout << "Podaj opcje:";
 		cin >> opt;
 		cout << endl;
 		switch (opt) {
 			case '1':
-				cout<<endl<<"Podaj ilosc testow: ";
-				cin>>numberOfTests;
+				cout << endl << "Podaj ilosc testow: ";
+				cin >> numberOfTests;
 				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
 					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
@@ -152,13 +152,14 @@ void Heap::test(string nameOfStructure) {
 
 						string path = "..\\wyniki\\";
 						path += to_string(time(0));
-						path += "-" + nameOfStructure + "-dodawanie-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+						path += "-" + nameOfStructure + "-dodawanie-n" + to_string(numberOfElements) + "-r" +
+								to_string(range) + ".txt";
 
 						fstream file(path, fstream::out);
 						srand(time(NULL));
 
-						if(!file.is_open()) {
-							cout<<"Wyniki sie nie zapisza!!!"<<endl;
+						if (!file.is_open()) {
+							cout << "Wyniki sie nie zapisza!!!" << endl;
 						}
 
 						file.setf(ios::fixed);
@@ -166,15 +167,15 @@ void Heap::test(string nameOfStructure) {
 						sumOfResults = 0;
 
 						for (int k = 0; k < numberOfTests; k++) {
-							generate(numberOfElements,range);
+							generate(numberOfElements, range);
 
 							int value = rand() % range;
 							counter.startCounter();
 							add(value, -1);
 							double result = counter.getCounter();
 							sumOfResults += result;
-							cout<<result<<endl;
-							file<<result<<endl;
+							cout << result << endl;
+							file << result << endl;
 							removePosition(-1);
 
 							clear();
@@ -182,16 +183,16 @@ void Heap::test(string nameOfStructure) {
 
 						sumOfResults /= numberOfTests;
 
-						cout<<"Srednia: "<<sumOfResults<<endl;
-						file<<"Srednia: "<<sumOfResults<<endl;
+						cout << "Srednia: " << sumOfResults << endl;
+						file << "Srednia: " << sumOfResults << endl;
 
 						file.close();
 					}
 				}
 				break;
 			case '2':
-				cout<<endl<<"Podaj ilosc testow: ";
-				cin>>numberOfTests;
+				cout << endl << "Podaj ilosc testow: ";
+				cin >> numberOfTests;
 				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
 					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
 						int numberOfElements = nOE[i];
@@ -200,13 +201,14 @@ void Heap::test(string nameOfStructure) {
 						string path = "..\\wyniki\\";
 
 						path += to_string(time(0));
-						path += "-" + nameOfStructure + "-usuwanie-n" + to_string(numberOfElements) + "-r" + to_string(range) + ".txt";
+						path += "-" + nameOfStructure + "-usuwanie-n" + to_string(numberOfElements) + "-r" +
+								to_string(range) + ".txt";
 
 						fstream file(path, fstream::out);
 						srand(time(NULL));
 
-						if(!file.is_open()) {
-							cout<<"Wyniki sie nie zapisza!!!"<<endl;
+						if (!file.is_open()) {
+							cout << "Wyniki sie nie zapisza!!!" << endl;
 						}
 
 						file.setf(ios::fixed);
@@ -214,7 +216,7 @@ void Heap::test(string nameOfStructure) {
 						sumOfResults = 0;
 
 						for (int k = 0; k < numberOfTests; k++) {
-							generate(numberOfElements,range);
+							generate(numberOfElements, range);
 
 							int value = rand() % range;
 							add(value, -1);
@@ -222,16 +224,16 @@ void Heap::test(string nameOfStructure) {
 							removePosition(-1);
 							double result = counter.getCounter();
 							sumOfResults += result;
-							cout<<result<<endl;
-							file<<result<<endl;
+							cout << result << endl;
+							file << result << endl;
 
 							clear();
 						}
 
 						sumOfResults /= numberOfTests;
 
-						cout<<"Srednia: "<<sumOfResults<<endl;
-						file<<"Srednia: "<<sumOfResults<<endl;
+						cout << "Srednia: " << sumOfResults << endl;
+						file << "Srednia: " << sumOfResults << endl;
 
 						file.close();
 					}

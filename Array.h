@@ -11,32 +11,32 @@
 class Array : public Structure {
 protected:
 
-    int* _array;
+	int *_array;
 
 public:
-    Array();
+	Array();
 
-    ~Array();
+	~Array();
 
-    void loadDataFrom(string fileName) override ;
+	void loadDataFrom(string fileName) override;
 
-    bool lookFor(int value) override ;
+	bool lookFor(int value) override;
 
-    void add(int value, int index) override ;
+	void add(int value, int index) override;
 
-    void remove(int value) override ;
+	void remove(int value) override;
 
-    void remove(int index, int value) override ;
+	void remove(int index, int value) override;
 
-    void removePosition(int index) override ;
+	void removePosition(int index) override;
 
-    string print() override ;
+	string print() override;
 
-    void generate(int size, int range = RAND_MAX) override ;
+	void generate(int size, int range = RAND_MAX) override;
 
 	void clear() override;
 
-    //void test() override ;
+	//void test() override ;
 
 };
 
