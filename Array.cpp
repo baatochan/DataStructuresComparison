@@ -29,7 +29,7 @@ bool Array::lookFor(int value) {
 	for (int i = 0; i < size; i++) {
 		if (_array[i] == value) {
 			valueExists = true;
-			cout << "Wartośc znajduje sie pod indeksem " + to_string(i) << endl;
+			cout << "Wartosc znajduje sie pod indeksem " + to_string(i) << endl;
 		}
 	}
 

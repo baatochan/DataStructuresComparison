@@ -63,7 +63,7 @@ bool List::lookFor(int value) {
 	for (int i = 0; i < size; i++) {
 		if (currentElement->Value == value) {
 			valueExists = true;
-			cout << "Wartośc znajduje sie pod indeksem " + to_string(i) << endl;
+			cout << "Wartosc znajduje sie pod indeksem " + to_string(i) << endl;
 		}
 		currentElement = currentElement->NextElement;
 	}
@@ -107,7 +107,7 @@ void List::add(int value, int index) {
 		addAtTheEnd(value);
 		return;
 	} else {
-		cout << "Coś jest nie tak." << endl;
+		cout << "Cos jest nie tak." << endl;
 		return;
 	}
 }
@@ -176,7 +176,7 @@ void List::remove(int index, int value) {
 			removeLast();
 		return;
 	} else if (index > (size - 1)) {
-		cout << "Podany indeks nie znajduje sie w liście. Lista jest krotsza!" << endl;
+		cout << "Podany indeks nie znajduje sie w liscie. Lista jest krotsza!" << endl;
 		return;
 	} else {
 		cout << "WUT WUT?!" << endl;
@@ -216,7 +216,7 @@ void List::removePosition(int index) {
 		removeLast();
 		return;
 	} else if (index > (size - 1)) {
-		cout << "Podany indeks nie znajduje sie w liście. Lista jest krotsza!" << endl;
+		cout << "Podany indeks nie znajduje sie w liscie. Lista jest krotsza!" << endl;
 		return;
 	} else {
 		cout << "WUT WUT?!" << endl;

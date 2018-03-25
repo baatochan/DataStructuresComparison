@@ -75,6 +75,7 @@ void Heap::test(string nameOfStructure) {
 		cout << "Podaj opcje:";
 		cin >> opt;
 		cout << endl;
+
 		switch (opt) {
 			case '1':
 				cout << endl << "Podaj ilosc testow: ";
@@ -124,6 +125,7 @@ void Heap::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '2':
 				cout << endl << "Podaj ilosc testow: ";
 				cin >> numberOfTests;
@@ -173,12 +175,15 @@ void Heap::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '0':
 				break;
+
 			default:
 				cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
 				break;
 		}
+
 	} while (opt != '0');
 }
 

@@ -28,6 +28,7 @@ void Structure::test(string nameOfStructure) {
 		cout << "Podaj opcje:";
 		cin >> opt;
 		cout << endl;
+
 		switch (opt) {
 			case '1':
 				cout << endl << "Podaj ilosc testow: ";
@@ -77,6 +78,7 @@ void Structure::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '2':
 				cout << endl << "Podaj ilosc testow: ";
 				cin >> numberOfTests;
@@ -128,6 +130,7 @@ void Structure::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '3':
 				cout << endl << "Podaj ilosc testow: ";
 				cin >> numberOfTests;
@@ -177,6 +180,7 @@ void Structure::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '4':
 				cout << endl << "Podaj ilosc testow: ";
 				cin >> numberOfTests;
@@ -226,6 +230,7 @@ void Structure::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '5':
 				cout << endl << "Podaj ilosc testow: ";
 				cin >> numberOfTests;
@@ -277,6 +282,7 @@ void Structure::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '6':
 				cout << endl << "Podaj ilosc testow: ";
 				cin >> numberOfTests;
@@ -326,12 +332,15 @@ void Structure::test(string nameOfStructure) {
 					}
 				}
 				break;
+
 			case '0':
 				break;
+
 			default:
 				cout << "Nie ma takiej opcji, wybierz jeszcze raz." << endl;
 				break;
 		}
+
 	} while (opt != '0');
 }
 
