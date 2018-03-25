@@ -29,7 +29,7 @@ bool Array::lookFor(int value) {
 	for (int i = 0; i < size; i++) {
 		if (_array[i] == value) {
 			valueExists = true;
-			cout << "Wartość znajduje się pod indeksem " + to_string(i) << endl;
+			cout << "Wartośc znajduje sie pod indeksem " + to_string(i) << endl;
 		}
 	}
 
@@ -38,7 +38,7 @@ bool Array::lookFor(int value) {
 
 void Array::add(int value, int index) {
 	if (index < 0) {
-		cout << "Indeks nie może być ujemny!" << endl;
+		cout << "Indeks nie moze byc ujemny!" << endl;
 		return;
 	} else if (index < size) {
 		if (_array[index] != 0) {
@@ -100,10 +100,10 @@ void Array::remove(int index, int value) {
 
 void Array::removePosition(int index) {
 	if (index < 0) {
-		cout << "Indeks nie może być ujemny!" << endl;
+		cout << "Indeks nie moze byc ujemny!" << endl;
 		return;
 	} else if (index >= size) {
-		cout << "Tablica nie posida tego indeksu, tablica jest krótsza" << endl;
+		cout << "Tablica nie posida tego indeksu, tablica jest krotsza" << endl;
 	} else {
 		int *tempArr = new int[size - 1];
 		int i = 0;
@@ -177,7 +177,7 @@ void Array::clear() {
 				srand(time(NULL));
 
 				if(!file.is_open()) {
-					cout<<"Wyniki się nie zapiszą!!!"<<endl;
+					cout<<"Wyniki sie nie zapisza!!!"<<endl;
 					return;
 				}
 
@@ -220,7 +220,7 @@ void Array::clear() {
 				srand(time(NULL));
 
 				if(!file.is_open()) {
-					cout<<"Wyniki się nie zapiszą!!!"<<endl;
+					cout<<"Wyniki sie nie zapisza!!!"<<endl;
 					return;
 				}
 
@@ -262,7 +262,7 @@ void Array::clear() {
 			srand(time(NULL));
 
 			if (!file.is_open()) {
-				cout << "Wyniki się nie zapiszą!!!" << endl;
+				cout << "Wyniki sie nie zapisza!!!" << endl;
 				return;
 			}
 

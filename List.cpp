@@ -63,7 +63,7 @@ bool List::lookFor(int value) {
 	for (int i = 0; i < size; i++) {
 		if (currentElement->Value == value) {
 			valueExists = true;
-			cout << "Wartość znajduje się pod indeksem " + to_string(i) << endl;
+			cout << "Wartośc znajduje sie pod indeksem " + to_string(i) << endl;
 		}
 		currentElement = currentElement->NextElement;
 	}
@@ -74,7 +74,7 @@ bool List::lookFor(int value) {
 void List::add(int value, int index) {
 	int halfOfSize = size / 2;
 	if (index < 0) {
-		cout << "Index nie może być ujemny." << endl;
+		cout << "Index nie moze byc ujemny." << endl;
 		return;
 	} else if (index == 0) {
 		addAtTheBeginning(value);
@@ -138,7 +138,7 @@ void List::remove(int value) {
 void List::remove(int index, int value) {
 	int halfOfSize = size / 2;
 	if (index < 0) {
-		cout << "Index nie może być mniejszy od zera!" << endl;
+		cout << "Index nie moze byc mniejszy od zera!" << endl;
 		return;
 	} else if (index == 0) {
 		if (_firstElement->Value == value)
@@ -176,7 +176,7 @@ void List::remove(int index, int value) {
 			removeLast();
 		return;
 	} else if (index > (size - 1)) {
-		cout << "Podany indeks nie znajduje się w liście. Lista jest krótsza!" << endl;
+		cout << "Podany indeks nie znajduje sie w liście. Lista jest krotsza!" << endl;
 		return;
 	} else {
 		cout << "WUT WUT?!" << endl;
@@ -187,7 +187,7 @@ void List::remove(int index, int value) {
 void List::removePosition(int index) {
 	int halfOfSize = size / 2;
 	if (index < 0) {
-		cout << "Index nie może być mniejszy od zera!" << endl;
+		cout << "Index nie moze byc mniejszy od zera!" << endl;
 		return;
 	} else if (index == 0) {
 		removeFirst();
@@ -216,7 +216,7 @@ void List::removePosition(int index) {
 		removeLast();
 		return;
 	} else if (index > (size - 1)) {
-		cout << "Podany indeks nie znajduje się w liście. Lista jest krótsza!" << endl;
+		cout << "Podany indeks nie znajduje sie w liście. Lista jest krotsza!" << endl;
 		return;
 	} else {
 		cout << "WUT WUT?!" << endl;
@@ -355,7 +355,7 @@ void List::clear() {
 				srand(time(NULL));
 
 				if(!file.is_open()) {
-					cout<<"Wyniki się nie zapiszą!!!"<<endl;
+					cout<<"Wyniki sie nie zapisza!!!"<<endl;
 					return;
 				}
 
@@ -398,7 +398,7 @@ void List::clear() {
 				srand(time(NULL));
 
 				if(!file.is_open()) {
-					cout<<"Wyniki się nie zapiszą!!!"<<endl;
+					cout<<"Wyniki sie nie zapisza!!!"<<endl;
 					return;
 				}
 
@@ -441,7 +441,7 @@ void List::clear() {
 			srand(time(NULL));
 
 			if (!file.is_open()) {
-				cout << "Wyniki się nie zapiszą!!!" << endl;
+				cout << "Wyniki sie nie zapisza!!!" << endl;
 				return;
 			}
 

@@ -87,7 +87,7 @@ void Program::useMenu(string info) {
 				} else {
 					index = -1;
 				}
-				cout << "podaj wartość:";
+				cout << "podaj wartośc:";
 				cin >> value;
 
 				_structure->add(value, index);
@@ -95,14 +95,14 @@ void Program::useMenu(string info) {
 				break;
 
 			case '2': //cout << "2.Wczytaj z pliku" << endl;
-				cout << " Podaj nazwę pliku:";
+				cout << " Podaj nazwe pliku:";
 				cin >> fileName;
 				_structure->loadDataFrom(fileName);
 				cout << _structure->print() << endl;
 				break;
 
 			case '3':  //cout << "3.Utworz losowo" << endl;
-				cout << "Podaj ilość elementów:";
+				cout << "Podaj ilośc elementow:";
 				cin >> value;
 				_structure->generate(value);
 				cout << _structure->print() << endl;
@@ -144,7 +144,7 @@ void Program::useMenu(string info) {
 				break;
 
 			case '7': //cout << "7.Znajdz" << endl;
-				cout << " podaj waertość:";
+				cout << " podaj waertośc:";
 				cin >> value;
 				if (_structure->lookFor(value))
 					cout << "poadana wartośc jest w strukturze";
@@ -157,7 +157,7 @@ void Program::useMenu(string info) {
 				break;
 
 			case '9': //cout << "9.Test (pomiary)" << endl;
-				// można sobie tu dodać własne case'y
+				// mozna sobie tu dodac wlasne case'y
 				_structure->test(info);
 				break;
 

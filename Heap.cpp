@@ -158,7 +158,7 @@ void Heap::test(string nameOfStructure) {
 						srand(time(NULL));
 
 						if(!file.is_open()) {
-							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+							cout<<"Wyniki sie nie zapisza!!!"<<endl;
 						}
 
 						file.setf(ios::fixed);
@@ -206,7 +206,7 @@ void Heap::test(string nameOfStructure) {
 						srand(time(NULL));
 
 						if(!file.is_open()) {
-							cout<<"Wyniki się nie zapiszą!!!"<<endl;
+							cout<<"Wyniki sie nie zapisza!!!"<<endl;
 						}
 
 						file.setf(ios::fixed);

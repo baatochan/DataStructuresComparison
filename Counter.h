@@ -1,7 +1,7 @@
 //
 // Created by barto on 18.04.17.
 //
-// Code written by Ramónster.
+// Code written by Ramonster.
 // It was said in task description that we can use code from that link.
 //
 
