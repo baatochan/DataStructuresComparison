@@ -4,6 +4,8 @@
 
 #include "Heap.h"
 
+// public
+
 Heap::Heap() : Array() {}
 
 void Heap::loadDataFrom(string fileName) {
@@ -50,73 +52,6 @@ string Heap::print() {
 void Heap::generate(int size, int range) {
 	Array::generate(size, range);
 	heapify();
-}
-
-void Heap::heapifyUp(int index) {
-	if (parentExists(index))
-		if (_array[getParent(index)] < _array[index]) {
-			std::swap(_array[getParent(index)], _array[index]);
-			heapifyUp(getParent(index));
-		}
-}
-
-void Heap::heapifyDown(int index) {
-	int largest = index;
-
-	if (leftChildExists(index))
-		if (_array[getLeftChild(index)] > _array[index])
-			largest = getLeftChild(index);
-	if (rightChildExists(index))
-		if (_array[getRightChild(index)] > _array[largest])
-			largest = getRightChild(index);
-
-	if (largest != index) {
-		std::swap(_array[largest], _array[index]);
-		heapifyDown(largest);
-	}
-}
-
-void Heap::heapify() {
-	for (int i = getLastParent(); i >= 0; i--) {
-		heapifyDown(i);
-	}
-}
-
-int Heap::getLastParent() {
-	return getParent(size - 1);
-}
-
-int Heap::getLeftChild(int index) {
-	return (2 * index) + 1;
-}
-
-int Heap::getRightChild(int index) {
-	return (2 * index) + 2;
-}
-
-bool Heap::leftChildExists(int index) {
-	if (getLeftChild(index) >= size)
-		return false;
-	else
-		return true;
-}
-
-bool Heap::rightChildExists(int index) {
-	if (getRightChild(index) >= size)
-		return false;
-	else
-		return true;
-}
-
-int Heap::getParent(int index) {
-	return (index - 1) / 2;
-}
-
-bool Heap::parentExists(int index) {
-	if (index <= 0 || index >= size)
-		return false;
-	else
-		return true;
 }
 
 void Heap::clear() {
@@ -246,4 +181,73 @@ void Heap::test(string nameOfStructure) {
 				break;
 		}
 	} while (opt != '0');
+}
+
+// private
+
+void Heap::heapifyUp(int index) {
+	if (parentExists(index))
+		if (_array[getParent(index)] < _array[index]) {
+			std::swap(_array[getParent(index)], _array[index]);
+			heapifyUp(getParent(index));
+		}
+}
+
+void Heap::heapifyDown(int index) {
+	int largest = index;
+
+	if (leftChildExists(index))
+		if (_array[getLeftChild(index)] > _array[index])
+			largest = getLeftChild(index);
+	if (rightChildExists(index))
+		if (_array[getRightChild(index)] > _array[largest])
+			largest = getRightChild(index);
+
+	if (largest != index) {
+		std::swap(_array[largest], _array[index]);
+		heapifyDown(largest);
+	}
+}
+
+void Heap::heapify() {
+	for (int i = getLastParent(); i >= 0; i--) {
+		heapifyDown(i);
+	}
+}
+
+int Heap::getLastParent() {
+	return getParent(size - 1);
+}
+
+int Heap::getLeftChild(int index) {
+	return (2 * index) + 1;
+}
+
+int Heap::getRightChild(int index) {
+	return (2 * index) + 2;
+}
+
+bool Heap::leftChildExists(int index) {
+	if (getLeftChild(index) >= size)
+		return false;
+	else
+		return true;
+}
+
+bool Heap::rightChildExists(int index) {
+	if (getRightChild(index) >= size)
+		return false;
+	else
+		return true;
+}
+
+int Heap::getParent(int index) {
+	return (index - 1) / 2;
+}
+
+bool Heap::parentExists(int index) {
+	if (index <= 0 || index >= size)
+		return false;
+	else
+		return true;
 }

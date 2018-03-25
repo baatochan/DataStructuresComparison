@@ -5,6 +5,8 @@
 
 #include "Program.h"
 
+// public
+
 void Program::start() {
 	char option;
 	do {
@@ -47,6 +49,8 @@ void Program::start() {
 
 	} while (option != '0');
 }
+
+// private
 
 void Program::printMenu(string info) {
 	cout << endl;

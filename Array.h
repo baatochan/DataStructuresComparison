@@ -36,8 +36,6 @@ public:
 
 	void clear() override;
 
-	//void test() override ;
-
 };
 
 

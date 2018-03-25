@@ -4,6 +4,8 @@
 
 #include "Counter.h"
 
+// public
+
 void Counter::startCounter() {
 	LARGE_INTEGER li;
 	if (!QueryPerformanceFrequency(&li))
