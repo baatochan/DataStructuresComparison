@@ -83,7 +83,7 @@ void List::add(int value, int index) {
 	} else if (index > 0 && index < halfOfSize) {
 		_listElement *newElement = new _listElement(value);
 		_listElement *currentElement = _firstElement;
-		for (int i = 0; i < index; i++) {
+		for (int i = 1; i < index; i++) {
 			currentElement = currentElement->NextElement;
 		}
 		newElement->NextElement = currentElement->NextElement;
@@ -92,7 +92,7 @@ void List::add(int value, int index) {
 		currentElement->NextElement = newElement;
 		size++;
 		return;
-	} else if (index >= halfOfSize && index < (size - 1)) {
+	} else if (index >= halfOfSize && index <= (size - 1)) {
 		_listElement *newElement = new _listElement(value);
 		_listElement *currentElement = _lastElement;
 		for (int i = (size - 1); i > index; i--) {
