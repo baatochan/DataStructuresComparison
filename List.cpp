@@ -56,19 +56,20 @@ void List::loadDataFrom(string fileName) {
 	}
 }
 
-bool List::lookFor(int value) {
-	bool valueExists = false;
+int List::lookFor(int value, bool doPrint) {
+	int valueExistsTimes = 0;
 	_listElement *currentElement = _firstElement;
 
 	for (int i = 0; i < size; i++) {
 		if (currentElement->Value == value) {
-			valueExists = true;
-			cout << "Wartosc znajduje sie pod indeksem " + to_string(i) << endl;
+			valueExistsTimes++;
+			if (doPrint)
+				cout << "Wartosc znajduje sie pod indeksem " + to_string(i) << endl;
 		}
 		currentElement = currentElement->NextElement;
 	}
 
-	return valueExists;
+	return valueExistsTimes;
 }
 
 void List::add(int value, int index) {

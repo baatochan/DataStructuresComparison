@@ -77,6 +77,9 @@ void Program::useMenu(string info) {
 	string fileName = "";
 	int index = 0;
 	int value = 0;
+	char select;
+	bool selectB;
+	int result;
 
 	do {
 		printMenu(info);
@@ -148,12 +151,28 @@ void Program::useMenu(string info) {
 				break;
 
 			case '7': //cout << "7.Znajdz" << endl;
-				cout << "Podaj waertosc:";
+				cout << "Podaj wartosc:";
 				cin >> value;
-				if (_structure->lookFor(value))
-					cout << "Podana wartosc jest w strukturze";
+
+				cout << "Czy drukowac indeksy, gdzie znajduja sie znalezione wyniki? [Y/n]" << endl;
+				cout << "(UWAGA! Znaczaco wydluza czas wyszukiwania, nie stosowac przy duzych strukturach): ";
+				cin >> select;
+
+				if (select == 'Y' || select == 'y')
+					selectB = true;
 				else
+					selectB = false;
+
+				result = _structure->lookFor(value, selectB);
+
+				if (result > 1)
+					cout << "Podana wartosc jest w strukturze " << result << " razy.";
+				else if (result == 1)
+					cout << "Podana wartosc jest w strukturze " << result << " raz.";
+				else if (result == 0)
 					cout << "Podanej wartosci NIE ma w strukturze";
+				else
+					cout << "The cake is a lie! Something went terribly wrong.";
 				break;
 
 			case '8':  //cout << "8.Wyswietl" << endl;

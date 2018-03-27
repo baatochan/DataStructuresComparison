@@ -23,17 +23,18 @@ void Array::loadDataFrom(string fileName) {
 	}
 }
 
-bool Array::lookFor(int value) {
-	bool valueExists = false;
+int Array::lookFor(int value, bool doPrint) {
+	int valueExistsTimes = 0;
 
 	for (int i = 0; i < size; i++) {
 		if (_array[i] == value) {
-			valueExists = true;
-			cout << "Wartosc znajduje sie pod indeksem " + to_string(i) << endl;
+			valueExistsTimes++;
+			if (doPrint)
+				cout << "Wartosc znajduje sie pod indeksem " + to_string(i) << endl;
 		}
 	}
 
-	return valueExists;
+	return valueExistsTimes;
 }
 
 void Array::add(int value, int index) {

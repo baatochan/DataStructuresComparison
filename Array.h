@@ -20,7 +20,7 @@ public:
 
 	void loadDataFrom(string fileName) override;
 
-	bool lookFor(int value) override;
+	int lookFor(int value, bool doPrint) override;
 
 	void add(int value, int index) override;
 

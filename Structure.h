@@ -26,7 +26,7 @@ public:
 
 	virtual void loadDataFrom(string fileName)= 0;
 
-	virtual bool lookFor(int value)= 0;
+	virtual int lookFor(int value, bool doPrint)= 0;
 
 	virtual void add(int value, int index)= 0;
 
