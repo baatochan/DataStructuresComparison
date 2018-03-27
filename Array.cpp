@@ -19,7 +19,7 @@ void Array::loadDataFrom(string fileName) {
 	vector<int> data = loadRawDataFrom(fileName);
 
 	for (int i = 0; i < data.size(); i++) {
-		add(data[i], size);
+		Array::add(data[i], size);
 	}
 }
 
