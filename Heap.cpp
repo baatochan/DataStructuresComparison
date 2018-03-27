@@ -66,11 +66,13 @@ void Heap::test(string nameOfStructure) {
 	int r[3] = {100, RAND_MAX / 2, RAND_MAX};
 	int numberOfTests;
 	double sumOfResults;
+	int res;
 
 	do {
 		cout << "- TESTY -" << endl;
 		cout << "1. Dodawanie" << endl;
 		cout << "2. Usuwanie" << endl;
+		cout << "3. Wyszukiwanie" << endl;
 		cout << "0. Powrot" << endl;
 		cout << "Podaj opcje:";
 		cin >> opt;
@@ -165,6 +167,58 @@ void Heap::test(string nameOfStructure) {
 
 							clear();
 						}
+
+						sumOfResults /= numberOfTests;
+
+						cout << "Srednia: " << sumOfResults << endl;
+						file << "Srednia: " << sumOfResults << endl;
+
+						file.close();
+					}
+				}
+				break;
+
+			case '3':
+				cout << endl << "Podaj ilosc testow: ";
+				cin >> numberOfTests;
+				for (int i = 0; i < sizeof(nOE) / sizeof(int); i++) {
+					for (int j = 0; j < sizeof(r) / sizeof(int); j++) {
+						int numberOfElements = nOE[i];
+						int range = r[j];
+
+						string path = "..\\wyniki\\";
+
+						path += to_string(time(0));
+						path += "-" + nameOfStructure + "-wyszukiwanie-n" + to_string(numberOfElements) + "-r" +
+								to_string(range) + ".txt";
+
+						fstream file(path, fstream::out);
+						srand(time(NULL));
+
+						if (!file.is_open()) {
+							cout << "Wyniki sie nie zapisza!!!" << endl;
+						}
+
+						file.setf(ios::fixed);
+
+						sumOfResults = 0;
+
+						generate(numberOfElements, range);
+						print();
+
+						for (int k = 0; k < numberOfTests; k++) {
+							int value = rand() % range;
+							cout << "Wyszukiwanie: " << value << endl;
+							counter.startCounter();
+							res = lookFor(value, false);
+							double result = counter.getCounter();
+							sumOfResults += result;
+							cout << "Wynik: " << res << endl;
+							cout << "Czas: " << result << endl;
+							file << result << endl;
+						}
+
+						clear();
 
 						sumOfResults /= numberOfTests;
 
