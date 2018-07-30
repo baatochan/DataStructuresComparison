@@ -1,8 +1,9 @@
 # Data Structures Comparison
 Implementation of basic data structures for comparison of how fast they perform.
-Project done as a task during Data Structures and Computational Complexity (Struktury danych i złożoność obliczeniowa) course at the University.
 
 Author: Bartosz Rodziewicz
+
+Project done as a task during Algorithms and Computational Complexity (Struktury danych i złożoność obliczeniowa) course at the university.
 
 There are two releases of this app:
 * `v1.0` has implementation of Array, List, Heap and Binary Search Tree (with DSW algorithm). However the implementation of heap is broken.
